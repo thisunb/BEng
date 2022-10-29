@@ -1,0 +1,451 @@
+html {
+    scroll-behavior:smooth;
+}
+
+* { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; 
+}
+
+
+/* iPhone portrait */
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+
+    .ui-grid-b{
+        display: none;
+        
+    }
+
+    .normal-view{  
+        display:contents;
+    }
+
+    .footer, .header{
+        background:#00247D;
+        padding: 0px
+    }
+    
+    #footer_text, #header_text{
+        font-size: 22px;
+        font-style: italic;
+    }
+    
+    .page{
+        background: url(../Materials/portrait/st.georges-chapel.png\ -\ Copy.bmp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .top_div{
+        padding-top: 20px;
+        background: white;
+        transform: translateY(-20px);
+        height: 120px;
+    }
+
+    .divider{
+        transform: translateY(-27px);
+        background-color: #00247D;
+        height: 5px;
+    }
+
+    .wrapper{
+        padding-left: 5px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .label{
+        height:35px;
+        width: 170px;
+        padding-top: 10px;
+        margin-left: 5px;
+        
+        background: #00247D;
+        text-align: center;
+        float: left;
+    }
+    
+    .value{
+        height:35px;
+        width: 170px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        text-align: center;
+        float: left;
+        background: #C8102E;
+        overflow: scroll;
+    }
+
+    .input{
+        color: white;
+        border-radius: 0px;
+        height: 30px;
+    }
+
+    .h4{
+        color: white;
+    }
+
+    .input-text-field-container{
+        width: 200px;
+    }
+    
+    .h1{
+        color: #00247D;
+        text-align: center;
+    }
+    
+    .h2, .h3{
+        text-align: center;
+    } 
+
+    .top_div{
+        margin-top: 40px !important;
+    }
+
+    .h3{
+        font-style: italic;
+        color: #00247D;
+        font-size: 22px;
+    }
+    
+    #comfirm_txt{
+        transform: translateX(200px); 
+        margin-top: 70px; 
+        height: 30px; 
+        width: 150PX; 
+        background: #C8102E;
+    }
+
+}
+
+
+/* iPhone landcape */
+@media only screen and (min-width: 377px) and (max-width: 812px) {
+
+    .ui-grid-b{
+        height: 100%;
+        display:contents;
+    }
+
+    .normal-view{
+        height: 100%;
+        display: none;
+    }
+
+    .footer, .header{
+        background:#00247D;
+        padding: 0px
+    }
+    
+    #footer_text, #header_text{
+        font-size: 22px;
+        font-style: italic;
+    }
+    
+    .page{
+        background: url(../Materials/portrait/st.georges-chapel.png\ -\ Copy.bmp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+
+    .input-text-field-container{
+        width: 200px;
+    }
+
+    .form-elements{
+        margin-top: 40px;
+        margin-left: 155px;
+        margin-right: 155px;
+    }
+    
+    .text-field-container-portrait1{
+        width: 200px;
+        margin-left: 10px;
+        background: #00247D;
+        margin: 10px;
+        text-align: center;
+        height: 36px;
+        padding-top: 10px;
+    }
+    
+    .input-text-field{
+        background: #C8102E;
+        border-radius: 0px;
+        height: 36px;
+        width: 200px;
+        color: white;
+    }
+    
+    .input-text-field-container{
+        width: 200px;
+        margin-left: 10px;
+        background: #C8102E;
+        margin: 10px;
+        text-align: center;
+        overflow: scroll;
+        height: 36px;
+        padding-top: 10px;
+    }
+    
+    .divider{
+        background-color: #00247D;
+        height: 5px;
+    }
+    
+    .h1{
+        color: #00247D;
+        text-align: center;
+    }
+
+    .h2{
+        font-style: italic;
+        color: #00247D;
+        font-size: 22px;
+    }
+    
+    .h2, .h3{
+        text-align: center;
+    } 
+
+}
+
+
+/* iPad portrait */
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+
+    .ui-grid-b{
+        display: none;
+    }
+
+    .normal-view{
+        display:contents;
+    }
+    
+    .page{
+        background: url(../Materials/portrait/st.georges-chapel.png\ -\ Copy.bmp);
+        background-position-x: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .top_div{
+        margin-top: 20px;
+        background: white;
+        transform: translateY(-20px);
+        height: 100px;
+        padding-top: 5px;
+    }
+
+    .divider{
+        transform: translateY(-27px);
+        background-color: #00247D;
+        height: 5px;
+    }
+
+    .middle_section{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 250px;
+    }
+
+    .wrapper{
+        padding-left: 5px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .label{
+        height:60px;
+        width: 350px;
+        padding-top: 20px;
+        margin-left: 5px;
+        background: #00247D;
+        text-align: center;
+        float: left;
+        transform: translateX(40%);
+    }
+    
+    .value{
+        height:60px;
+        width: 350px;
+        padding-top: 20px;
+        margin-left: 50px;
+        background: #C8102E;
+        text-align: center;
+        float: left;
+        font-size: 23px;
+        transform: translateX(40%);
+    }
+
+    .input{
+        
+        color: white;
+        border-radius: 0px;
+        height: 60px;
+        width: 350px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .h4{
+        color: white;
+        font-size: 24px !important;
+        
+    }
+
+    .input-text-field-container{
+        width: 200px;
+    }
+    
+    .h1{
+        color: #00247D;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .h2, .h3{
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .ver_divider{
+        transform: rotate(180deg);
+        height: 1024px;
+        width: 5px;
+    }
+
+    #comfirm_txt{
+        transform: translateX(600px); 
+        margin-top: 70px; 
+        height: 50px; 
+        width: 300PX; 
+        background: #C8102E;
+    }
+
+}
+
+
+/* iPad landscape */
+
+@media only screen and (min-width: 1366px) {
+
+    .ui-grid-b{
+        display: none;
+    }
+
+    .normal-view{
+        display:contents;
+    }
+    
+    .page{
+        background: url(../Materials/portrait/st.georges-chapel.png\ -\ Copy.bmp);
+        background-position-x: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .top_div{
+        margin-top: 20px;
+        background: white;
+        transform: translateY(-20px);
+        height: 100px;
+        padding-top: 5px;
+    }
+
+    .divider{
+        transform: translateY(-27px);
+        background-color: #00247D;
+        height: 5px;
+    }
+
+    .middle_section{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 250px;
+        margin-left: 150px;
+    }
+
+    .wrapper{
+        padding-left: 5px;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .label{
+        height:60px;
+        width: 350px;
+        padding-top: 20px;
+        margin-left: 5px;
+        background: #00247D;
+        text-align: center;
+        float: left;
+        transform: translateX(40%);
+    }
+    
+    .value{
+        height:60px;
+        width: 350px;
+        padding-top: 20px;
+        margin-left: 50px;
+        background: #C8102E;
+        text-align: center;
+        float: left;
+        font-size: 23px;
+        transform: translateX(40%);
+    }
+
+    .input{
+        
+        color: white;
+        border-radius: 0px;
+        height: 60px;
+        width: 350px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .h4{
+        color: white;
+        font-size: 24px !important;
+        
+    }
+
+    .input-text-field-container{
+        width: 200px;
+    }
+    
+    .h1{
+        color: #00247D;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .h2, .h3{
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .ver_divider{
+        transform: rotate(180deg);
+        height: 1024px;
+        width: 5px;
+    }
+
+    #comfirm_txt{
+        transform: translateX(600px); 
+        margin-top: 70px; 
+        height: 50px; 
+        width: 300PX; 
+        background: #C8102E;
+    }
+
+}
+

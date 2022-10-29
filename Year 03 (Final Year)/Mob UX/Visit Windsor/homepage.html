@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css\homepage.css">
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css" />
+    <script src="js/common_functions.js"></script>
+</head>
+
+<body>
+
+    <!-- /home page -->
+
+    <div data-role="page" class="page">
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">Site</a></li>
+            <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+            <li><a href="poi_list.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">User Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+        </ul>
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Normal view (upper section) -->
+
+        <div class='normal-view'>
+            <div class="container">
+                <h1 class="h1">WINDSOR<br> <span style="padding-left:20px ;">CASTLE</span> </h1>
+                <a href="site_windsor_castle.html" rel="external" class="visit_windsor_btn" data-role="button">Visit Windsor
+                    Now!</a>
+            </div>
+        </div>
+
+        <!-- iPhone landscape grid view (upper section) -->
+
+        <div class="ui-grid-a">
+            <div class="container">
+                <h1 class="h1">WINDSOR<br> <span style="padding-left:20px ;">CASTLE</span></h1>
+                <a href="site_windsor_castle.html" rel="external" class="visit_windsor_btn" data-role="button">Visit Windsor
+                    Now!</a>
+            </div>
+        </div>
+
+        <!-- /footer -->
+
+        <footer data-role="footer" class="footer" style=" position:fixed; bottom:0;">
+            <h3 id="footer-text">Designed by MobUX</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

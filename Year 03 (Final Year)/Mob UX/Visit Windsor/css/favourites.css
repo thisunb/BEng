@@ -1,0 +1,348 @@
+html {
+    scroll-behavior:smooth;
+}
+
+* { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+
+/* iPhone portrait */
+
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+
+    .ui-grid-a{
+        display: none;
+    }
+
+    .normal-view{
+        display:contents;
+    }
+
+    #poi_list_name_text{
+        padding: 5px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 15px; 
+    }
+
+    .poi_list_name{
+        position: absolute;
+        margin-top: -45px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+    }
+
+    #top_remove_text{
+        padding: 0px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 20px; 
+    }
+
+    .top_remove_square{
+        position: absolute;
+        margin-top: 0px;
+        height: 25px;
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+        z-index: 2;
+    }
+
+    #fav-header-text{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    #message-text{
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #email-favourites-btn{
+        width: 250px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: #C8102E;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+/* iPhone landscape */
+
+@media only screen and (min-width: 377px) and (max-width: 812px) {
+
+    .ui-grid-a{
+        display:contents;
+    }
+
+    .normal-view{
+        display: none;
+    }
+
+    #poi_list_name_text{
+        padding: 5px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 15px; 
+    }
+
+    .poi_list_name{
+        position: absolute;
+        margin-top: -45px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+    }
+
+    #top_remove_text{
+        padding: 0px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 20px; 
+    }
+
+    .top_remove_square{
+        position: absolute;
+        margin-top: 0px;
+        height: 25px;
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+        z-index: 2;
+    }
+
+    .email-favourites-btn-wrapper{
+        position: relative;
+        top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #email-favourites-btn{
+        width: 250px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px !important;
+        background: #C8102E;
+        color: white;
+        font-size: 20px;
+    }
+
+    #fav-header-text{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    #message-text{
+        text-align: center;
+        font-size: 23px;
+        font-style: italic;
+    }
+}
+
+
+/* iPad portrait */
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+
+    .ui-grid-a{
+        height: auto;
+        display: none;
+    }
+
+    .normal-view{
+        height: auto;
+        display:contents;
+    }
+
+    #poi_list_name_text{
+        padding: 10px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 24px; 
+    }
+
+    .poi_list_name{
+        position: absolute;
+        margin-top: -65px;
+        height: 60px;
+        width: 300px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+    }
+
+    #top_remove_text{
+        padding: 0px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 36px; 
+    }
+
+    .top_remove_square{
+        position: absolute;
+        margin-top: 0px;
+        height: 55px;
+        width: 70px;
+        padding: 5px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+        z-index: 2;
+    }
+
+    .poi-image-box{
+        height: 500px;
+    }
+
+    #email-favourites-btn{
+        width: 350px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: #C8102E;
+        color: white;
+        font-size: 25px;
+    }
+
+    #fav-header-text{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    #message-text{
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+    }
+}
+
+
+/* iPad landscape */
+
+@media only screen and (min-width: 1366px) {
+
+    .ui-grid-a{
+        height: auto;
+        display: none;
+    }
+
+    .normal-view{
+        height: auto;
+        display:contents;
+    }
+
+    #poi_list_name_text{
+        padding: 10px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 24px; 
+    }
+
+    .poi_list_name{
+        position: absolute;
+        margin-top: -65px;
+        height: 60px;
+        width: 350px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+    }
+
+    #top_remove_text{
+        padding: 0px;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        font-style: italic;
+        font-size: 36px; 
+    }
+
+    .top_remove_square{
+        position: absolute;
+        margin-top: 0px;
+        height: 55px;
+        width: 70px;
+        padding: 5px;
+        text-align: center;
+        background-color: #C8102E;
+        opacity: 0.9;
+        z-index: 2;
+    }
+
+    .poi-image-box{
+        height: 700px;
+    }
+
+    #email-favourites-btn{
+        width: 350px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: #C8102E;
+        color: white;
+        font-size: 25px;
+    }
+
+    #fav-header-text{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    #message-text{
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+    }
+}

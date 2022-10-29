@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\poi_list.css">
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <script src="js/poi_list.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="js/favourites.js"></script>
+    <script src="js/common_functions.js"></script>
+</head>
+
+<body>
+
+    <!-- Alert box -->
+
+    <div id="alert">
+        <h2 id="alert-heading">ALERT</h2>
+        <h4 id="alert-text"></h4>
+        <div class="remove-alert"><a id='remove-alert-btn' data-role="button" onClick="removeAlert()">OK</a></div>
+    </div>
+
+    <!-- Page -->
+
+    <div id="page" data-role="page">
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none" data-icon="false">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black; border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Site</a>
+            </li>
+            <li><a href="signup_login.html" rel="external" id="link-item"
+                    style="border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Login</a>
+            </li>
+            <li><a href="poi_list.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;  border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item"
+                    style="border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">POI
+                    Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;  border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">User
+                    Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item"
+                    style="border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">My
+                    Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;  border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item"
+                    style="border: none; font-size: 20px; text-align: center; font-weight: 500; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">About
+                    us</a></li>
+        </ul>
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item" style="padding-top: 25px;">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item" style="padding-top: 25px;">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item" style="padding-top: 25px;">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item" style="padding-top: 25px;">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item" style="padding-top: 25px;">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item" style="padding-top: 25px;">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item" style="padding-top: 25px;">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item" style="padding-top: 25px;">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header -->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <a href="#" id="back-btn" data-rel="back"
+                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"
+                    data-role="button">Back</a>
+                <h1 id="header-text">POI List</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img id="scan-icon" src="Materials\icons\scan-icon.png">
+                </a>
+            </div>
+        </header>
+
+        <!-- Body  -->
+
+        <div class="list-header-text-container"><h3 class="list-header-text">Sort items by rating!</h3></div>
+
+        <div>
+            <a id="rating-sort" data-role="button">Sort by Rating</a>
+            <ul data-role="listview" class="listview" data-sort="none"  data-icon="false" data-filter="true" id="food" name="food"></ul>
+        </div>
+
+
+        <!-- Footer -->
+
+		<footer data-role="footer" class="footer">
+			<h3 id="footer-text">Designed by MobUX</h3>
+		</footer>
+    </div>
+</body>
+
+</html>

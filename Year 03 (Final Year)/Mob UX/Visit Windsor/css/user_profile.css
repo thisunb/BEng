@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* iPhone portrait */
+
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+  #button1 {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 50px;
+    border: none;
+  }
+
+  .slectableTags {
+    border-radius: 10px;
+    background-color: #00247d;
+    color: black;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+  }
+
+  .slectableTags:active {
+    background: #00247d;
+  }
+
+  .slectableTags:focus {
+    background: #00247d;
+  }
+
+  #bar {
+    border: radius 25px !important;
+    width: 80%;
+    height: 2.5rem;
+    text-align: center;
+    color: #00247d;
+    background-image: #00247d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 40px;
+    border: solid black;
+  }
+
+  .slectableTags:active {
+    background-color: #00247d;
+  }
+
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .points-header {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+  }
+
+  #points-text {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+
+    box-sizing: content-box;
+    border: none;
+    background-color: #00247d;
+    border-radius: 1000px;
+    padding: 15px;
+  }
+}
+
+/* iPhone landcape */
+
+@media only screen and (min-width: 377px) and (max-width: 812px) {
+  #button1 {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 50px;
+    border: none;
+  }
+
+  .slectableTags {
+    border-radius: 10px;
+    background-color: #00247d !important;
+    color: black;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+  }
+
+  .slectableTags:active {
+    background: #00247d;
+  }
+
+  .slectableTags:focus {
+    background: #00247d;
+  }
+
+  #bar {
+    border: radius 25px;
+    width: 80%;
+    height: 2.5rem;
+    text-align: center;
+    color: #00247d;
+    background-image: #00247d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 80px;
+    border: solid black;
+  }
+
+  .slectableTags:active {
+    background-color: #00247d;
+  }
+
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .points-header {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+  }
+
+  #points-text {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+
+    box-sizing: content-box;
+    border: none;
+    background-color: #00247d;
+    border-radius: 1000px;
+    padding: 15px;
+  }
+}
+
+/* iPad portrait */
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+  #button1 {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 100px;
+    border: none;
+  }
+
+  .slectableTags {
+    border-radius: 10px;
+    background-color: #00247d;
+    color: black;
+    width: 25%;
+    height: 50px;
+    font-size: 50px !important;
+    border: none;
+  }
+
+  .slectableTags:active {
+    background: #00247d;
+  }
+
+  .slectableTags:focus {
+    background: #00247d;
+  }
+
+  #bar {
+    border: radius 25px;
+    width: 80%;
+    height: 2.5rem;
+    text-align: center;
+    color: #00247d;
+    background-image: #00247d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 100px;
+    border: solid black;
+  }
+
+  .slectableTags:active {
+    background-color: #00247d;
+  }
+
+  .result {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .points-header {
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+  }
+
+  #points-text {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+
+    box-sizing: content-box;
+    border: none;
+    background-color: #00247d;
+    border-radius: 1000px;
+    padding: 15px;
+  }
+}
+
+/* iPad landscape */
+
+@media only screen and (min-width: 1366px) {
+  #button1 {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 25%;
+    height: 50px;
+    border: none;
+  }
+
+  .slectableTags {
+    border-radius: 10px;
+    background-color: #00247d;
+    color: black;
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+  }
+
+  .slectableTags:active {
+    background: #00247d;
+  }
+
+  .slectableTags:focus {
+    background: #00247d;
+  }
+
+  #bar {
+    border: radius 25px;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    color: #00247d;
+    background-image: #00247d;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: solid black;
+  }
+
+  .slectableTags:active {
+    background-color: #00247d;
+  }
+
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .points-header {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+  }
+
+  #points-text {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+
+    box-sizing: content-box;
+    border: none;
+    background-color: #00247d;
+    border-radius: 1000px;
+    padding: 15px;
+  }
+}

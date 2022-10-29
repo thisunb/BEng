@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\favourites.css" />
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" href="js/poi1_windsor_castle_gardens.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="js/favourites.js"></script>
+    <script src="js/common_functions.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+
+    <!-- Alert box -->
+
+    <div id="alert">
+        <h2 id="alert-heading">ALERT</h2>
+        <h4 id="alert-text"></h4>
+        <div class="remove-alert"><a id='remove-alert-btn' data-role="button" onClick="removeAlert()">OK</a></div>
+    </div>
+
+    <!-- Page -->
+
+    <div data-role="page" style="background: white">
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">Site</a></li>
+            <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+            <li><a href="poi_list.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">User Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+        </ul>
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header -->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <a href="#" id="back-btn" data-rel="back"
+                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"
+                    data-role="button">Back</a>
+                <h1 id="header-text">Favourites</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img id="scan-icon" src="Materials\icons\scan-icon.png">
+                </a>
+            </div>
+        </header>
+
+        <h3 id="message-text">You have not added any POIs as favourites!</h3>
+
+        <!-- Normal view -->
+
+        <div class="normal-view" style="background: white;">
+            <ul data-role="listview" style="text-align: center; background: white;">
+
+                <li style="background: white;">
+                    <div id="poi1">
+                        <div class="top_remove_square" id="poi1-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi1_windsor_castle_gardens.html" rel="external">
+                            <img src="Materials\landscape\windor-castle-gardens-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img1"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Windsor Castle Gardens</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi2">
+                        <div class="top_remove_square" id="poi2-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi2_albert_memorial_chapel.html" rel="external">
+                            <img src="Materials\landscape\albert-memorial-chapel-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img2"
+                                class="poi-image-box" />
+
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Albert Memorial Chapel</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi3">
+                        <div class="top_remove_square" id="poi3-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi3_great_home_parks.html" rel="external">
+                            <img src="Materials\landscape\great-home-parks-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img3"
+                                class="poi-image-box" />
+
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Great & Home Parks</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi4">
+                        <div class="top_remove_square" id="poi4-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi4_towers.html" rel="external">
+                            <img src="Materials\landscape\curfew-tower-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img4"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">The Towers</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi5">
+                        <div class="top_remove_square" id="poi5-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi5_waterloo_chamber.html" rel="external">
+                            <img src="Materials\landscape\waterloo-chamber-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img5"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Waterloo Chamber</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi6">
+                        <div class="top_remove_square" id="poi6-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi6_queen_mary_doll_house.html" rel="external">
+                            <img src="Materials\landscape\queens-marys-dolls-house-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img6"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Queen Mary's Doll's House</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi7">
+                        <div class="top_remove_square" id="poi7-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi7_change_the_guard.html" rel="external">
+                            <img src="Materials\landscape\change-the-guard-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img7"
+                                class="poi-image-box" />
+
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Change The Guard</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi8">
+                        <div class="top_remove_square" id="poi8-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi8_st_george_chapel.html" rel="external">
+                            <img src="Materials\landscape\st.georges-chapel-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img8"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">St. George's Chapel</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi9">
+                        <div class="top_remove_square" id="poi9-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi9_semi_state_rooms.html" rel="external">
+                            <img src="Materials\landscape\semi-state-rooms-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img9"
+                                class="poi-image-box" />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">Semi-State Roooms</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li style="background: white;">
+                    <div id="poi10">
+                        <div class="top_remove_square" id="poi10-rem" style="opacity: 0.4;">
+                            <h4 id="top_remove_text">-</h4>
+                        </div>
+                        <a href="poi10_state_apartments.html" rel="external">
+                            <img src="Materials\landscape\state-apartments-landscape.png"
+                                style="width: 100%; opacity: 0.4; filter: grayscale(100%)" id="img10"
+                                class="poi-image-box" s />
+                            <div style="display: flex; justify-content: flex-end">
+                                <div class="poi_list_name">
+                                    <h4 id="poi_list_name_text">State Apartments</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- iPhone landscape grid view -->
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <ul data-role="listview" style="text-align: center; background: white;">
+
+                    <li style="background: white;">
+                        <div id="poi11">
+                            <div class="top_remove_square" id="poi11-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi1_windsor_castle_gardens.html" rel="external">
+                                <img src="Materials\landscape\windor-castle-gardens-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img11" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Windsor Castle Gardens</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi22">
+                            <div class="top_remove_square" id="poi22-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi2_albert_memorial_chapel.html" rel="external">
+                                <img src="Materials\landscape\albert-memorial-chapel-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img22" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Albert Memorial Chapel</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi33">
+                            <div class="top_remove_square" id="poi33-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi3_great_home_parks.html" rel="external">
+                                <img src="Materials\landscape\great-home-parks-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img33" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Great & Home Parks</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi44">
+                            <div class="top_remove_square" id="poi44-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi4_towers.html" rel="external">
+                                <img src="Materials\landscape\curfew-tower-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img44" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">The Towers</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi55">
+                            <div class="top_remove_square" id="poi55-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi5_waterloo_chamber.html" rel="external">
+                                <img src="Materials\landscape\waterloo-chamber-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img55" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Waterloo Chamber</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ui-block-b">
+                <ul data-role="listview" style="text-align: center; background: white;">
+
+                    <li style="background: white;">
+                        <div id="poi66">
+                            <div class="top_remove_square" id="poi66-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi6_queen_mary_doll_house.html" rel="external">
+                                <img src="Materials\landscape\queens-marys-dolls-house-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img66" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Queen Mary's Doll's House</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi77">
+                            <div class="top_remove_square" id="poi77-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi7_change_the_guard.html" rel="external">
+                                <img src="Materials\landscape\change-the-guard-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img77" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Change The Guard</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi88">
+                            <div class="top_remove_square" id="poi88-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi8_st_george_chapel.html" rel="external">
+                                <img src="Materials\landscape\st.georges-chapel-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img88" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">St. George's Chapel</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi99">
+                            <div class="top_remove_square" id="poi99-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi9_semi_state_rooms.html" rel="external">
+                                <img src="Materials\landscape\semi-state-rooms-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img99" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">Semi-State Rooms</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li style="background: white;">
+                        <div id="poi1010">
+                            <div class="top_remove_square" id="poi1010-rem" style="opacity: 0.4;">
+                                <h4 id="top_remove_text">-</h4>
+                            </div>
+                            <a href="poi10_state_apartments.html" rel="external">
+                                <img src="Materials\landscape\state-apartments-landscape.png" style="
+                  width: 100%;
+                  height: 220px;
+                  opacity: 0.4;
+                  filter: grayscale(100%);
+                " id="img1010" />
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div class="poi_list_name">
+                                        <h4 id="poi_list_name_text">State Apartments</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <a data-role="button" class="email-favourites-btn-wrapper" id="email-favourites-btn">Email Favourites</a>
+
+        <!-- Footer -->
+
+        <footer data-role="footer" class="footer">
+            <h3 id="footer-text">Designed by MobUX</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

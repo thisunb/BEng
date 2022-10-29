@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\poi_ratings.css">
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" href="js/poi1_windsor_castle_gardens.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="js/favourites.js"></script>
+    <script src="js/common_functions.js"></script>
+</head>
+
+<body>
+
+    <!-- Alert box -->
+
+    <div id="alert">
+        <h2 id="alert-heading">ALERT</h2>
+        <h4 id="alert-text"></h4>
+        <div class="remove-alert"><a id='remove-alert-btn' data-role="button" onClick="removeAlert()">OK</a></div>
+    </div>
+
+    <!-- Page -->
+
+    <div data-role="page" style="background: white;" id="page">
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">Site</a></li>
+            <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+            <li><a href="poi_list.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">User Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+        </ul>
+
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header -->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <a href="#" id="back-btn" data-rel="back"
+                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"
+                    data-role="button">Back</a>
+                <h1 id="header-text">POI Ratings</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img id="scan-icon" src="Materials\icons\scan-icon.png">
+                </a>
+            </div>
+        </header>
+
+        <!-- Normal View -->
+
+        <div class='normal-view'>
+            <div class="ui-content">
+                <div class="ui-grid-b ui-responsive" style="padding: 10px;">
+                    <ul data-role="listview" data-filter="true" item="true">
+
+                        <li>
+                            <a href="poi1_windsor_castle_gardens.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Windsor Castle Gardens
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\windor-castle-gardens-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi1" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi2_albert_memorial_chapel.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Albert Memorial Chapel
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\albert-memorial-chapel-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi2" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi3_great_home_parks.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Great & Home Parks
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\great-home-parks-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi3" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi4_towers.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    The Towers
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\curfew-tower-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi4" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi5_waterloo_chamber.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Waterloo Chamber
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\waterloo-chamber-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi5" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi6_queen_mary_doll_house.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Queen Mary's Doll's House
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\queens-marys-dolls-house-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi6" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi7_change_the_guard.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Change The Guard
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\change-the-guard-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi7" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi8_st_george_chapel.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    St. George's Chapel
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\st.georges-chapel-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi8" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi9_semi_state_rooms.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    Semi - State Rooms
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\semi-state-rooms-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi9" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="poi10_state_apartments.html" rel="external"
+                                style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                <h3 id="poi-heading">
+                                    State Apartments
+                                </h3>
+                                <div>
+                                    <img id="poi-icon" src="Materials\landscape\state-apartments-landscape.png">
+                                </div>
+                                <div class="rating">
+                                    <h4 id="rating-text">Rating</h4>
+                                    <div class="display-rate-star">
+                                        <p id="rate-poi10" class="rate-poi-text">5.0</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone landscape view -->
+
+        <div class='ui-grid-a'>
+            <div class="ui-content">
+                <div class="ui-grid-a ui-responsive" style="padding: 10px;">
+                    <div class="ui-block-a">
+                        <ul data-role="listview" item="true">
+                            <li>
+                                <a href="poi1_windsor_castle_gardens.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Windsor Castle Gardens
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon"
+                                            src="Materials\landscape\windor-castle-gardens-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi11" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi2_albert_memorial_chapel.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Albert Memorial Chapel
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon"
+                                            src="Materials\landscape\albert-memorial-chapel-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi22" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi3_great_home_parks.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Great & Home Parks
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\great-home-parks-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi33" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi4_towers.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        The Towers
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\curfew-tower-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi44" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi5_waterloo_chamber.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Waterloo Chamber
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\waterloo-chamber-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi55" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Column 2 -->
+
+                    <div class="ui-block-b">
+                        <ul data-role="listview" item="true">
+                            <li>
+                                <a href="poi6_queen_mary_doll_house.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Queen Mary's Doll's House
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon"
+                                            src="Materials\landscape\queens-marys-dolls-house-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi66" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi7_change_the_guard.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Change The Guard
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\change-the-guard-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi77" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi8_st_george_chapel.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        St. George's Chapel
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\st.georges-chapel-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi88" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi9_semi_state_rooms.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        Semi - State Rooms
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\semi-state-rooms-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi99" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="poi10_state_apartments.html" rel="external"
+                                    style="display: flex; flex-direction: column; text-align: center; background: white;">
+                                    <h3 id="poi-heading">
+                                        State Apartments
+                                    </h3>
+                                    <div>
+                                        <img id="poi-icon" src="Materials\landscape\state-apartments-landscape.png">
+                                    </div>
+                                    <div class="rating">
+                                        <h4 id="rating-text">Rating</h4>
+                                        <div class="display-rate-star">
+                                            <p id="rate-poi1010" class="rate-poi-text">5.0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer data-role="footer" class="footer">
+            <h3 id="footer-text">Designed by MobUX</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

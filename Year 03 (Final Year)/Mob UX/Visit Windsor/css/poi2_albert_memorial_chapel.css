@@ -1,0 +1,1198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* iPhone portrait */
+
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+  /* Body section */
+
+  .ui-grid-a {
+    display: none;
+  }
+
+  .normal-view {
+    display: contents;
+  }
+
+  #poi-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+
+  #poi-name {
+    font-size: 20px;
+  }
+
+  /* Comments section */
+
+  #comments-header-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #single-comment > p {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    color: white;
+  }
+
+  #comments {
+    background-color: #00247d;
+    overflow-y: scroll;
+    height: 300px;
+  }
+
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+  }
+
+  #user-name {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #user-comment {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .enter-comment {
+    margin: auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border: none;
+  }
+
+  button {
+    background-color: Transparent;
+    border: none;
+    color: red;
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    -webkit-appearance: none;
+  }
+
+  #line {
+    display: block;
+  }
+
+  .tile_div button {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .commenter-icon {
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  #enter::placeholder {
+    text-align: center;
+  }
+
+  .enter-comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* Dispaly rating section */
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .display-rate-star {
+    width: 60px;
+    height: 60px;
+    background-image: url(../Materials/icons/stars/star.png);
+    background-size: cover;
+    text-align: center;
+  }
+
+  #rate-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .read-more-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+  }
+
+  .divider {
+    background-color: #00247d;
+    height: 5px;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 2em;
+    font-size: 18px;
+  }
+
+  /* Favoutites button */
+
+  .add-favorites-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #fav-btn {
+    background: #c8102e;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  #fav-icon {
+    margin-top: 18px;
+    width: 40px;
+    height: 30px;
+  }
+
+  /* Rate section */
+
+  .star-rate-section-wrapper {
+    background: #c8102e;
+    width: 60%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .star-rate-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .star-size {
+    height: 30px;
+    width: 30px;
+  }
+
+  .rate-star {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #rate {
+    margin-top: 0px;
+    background: #00247d;
+    border-radius: 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  /* Nav to poi section */
+
+  .nav-to-poi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .go-back-section {
+    text-align: center;
+    margin-right: 180px;
+    margin-top: -130px;
+    opacity: 1;
+  }
+
+  #nav-back-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  #back-text {
+    margin-top: 3px;
+    color: black;
+  }
+
+  .go-next-section {
+    text-align: center;
+    margin-left: 80px;
+    margin-top: -130px;
+  }
+
+  #nav-forward-image {
+    margin-top: 3px;
+    height: 50px;
+    width: 50px;
+  }
+
+  #next-text {
+    margin-top: 0px;
+    color: black;
+  }
+}
+
+/* iPhone landcape */
+
+@media only screen and (min-width: 377px) and (max-width: 812px) {
+  /* Body section */
+
+  .ui-grid-a {
+    display: contents;
+  }
+
+  .normal-view {
+    display: none;
+  }
+
+  #poi-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  #poi-name {
+    font-size: 20px;
+  }
+
+  /* Comments section */
+
+  #comments-header-text {
+    margin-top: 100px;
+    margin-left: 120px;
+    font-size: 20px;
+  }
+
+  #single-comment > p {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    color: white;
+  }
+
+  #comments {
+    background-color: #00247d;
+    width: 50%;
+    overflow-y: scroll;
+    height: 300px;
+  }
+
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+  }
+
+  #user-name {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #user-comment {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .enter-comment {
+    margin: auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border: none;
+  }
+
+  button {
+    background-color: Transparent;
+    border: none;
+    color: red;
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    -webkit-appearance: none;
+  }
+
+  #line {
+    display: block;
+  }
+
+  .tile_div button {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .commenter-icon {
+    width: 50px;
+    border-radius: 100%;
+  }
+  #enter::placeholder {
+    text-align: center;
+  }
+
+  .enter-comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* Option section */
+
+  .options-section {
+    margin-top: -250px;
+  }
+
+  /* Dispaly rating section */
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .display-rate-star {
+    width: 60px;
+    height: 60px;
+    background-image: url(../Materials/icons/stars/star.png);
+    background-size: cover;
+    text-align: center;
+  }
+
+  #rate-text2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .read-more-btn {
+    background: #c8102e;
+    color: white;
+    width: 40%;
+    padding: 1%;
+    font-size: 18px;
+    position: relative;
+    left: 28%;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+
+  .divider {
+    background-color: #00247d;
+    height: 5px;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 2em;
+  }
+
+  /* Favoutites button */
+
+  .add-favorites-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    margin: auto 70px auto auto;
+  }
+
+  #fav-btn {
+    background: #c8102e;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  #fav-icon {
+    margin-top: 18px;
+    width: 40px;
+    height: 30px;
+  }
+
+  /* Rate section */
+
+  .star-rate-section-wrapper {
+    background: #c8102e;
+    width: 30%;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 70px auto auto;
+  }
+
+  .star-rate-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .star-size {
+    height: 30px;
+    width: 30px;
+  }
+
+  .rate-star {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #rate {
+    margin-top: 0px;
+    background: #00247d;
+    border-radius: 0;
+    width: 30%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    margin: 0 70px auto auto;
+  }
+
+  /* Nav to poi section */
+
+  .nav-to-poi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .go-back-section {
+    text-align: center;
+    margin-left: 420px;
+    opacity: 1;
+  }
+
+  #nav-back-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  #back-text {
+    margin-top: 3px;
+    color: black;
+  }
+
+  .go-next-section {
+    text-align: center;
+    padding-left: 150px;
+  }
+
+  #nav-forward-image {
+    margin-top: 0px;
+    height: 50px;
+    width: 50px;
+  }
+
+  #next-text {
+    margin-top: 0px;
+    color: black;
+  }
+}
+
+/* iPad portrait */
+
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+  /* Body section */
+
+  .ui-grid-a {
+    display: none;
+  }
+
+  .normal-view {
+    display: contents;
+  }
+
+  #poi-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  #poi-name {
+    font-size: 28px;
+  }
+
+  /* Comments section */
+
+  #comments-header-text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  #single-comment > p {
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: white;
+    font-size: 22px;
+  }
+
+  #comments {
+    background-color: #00247d;
+    overflow-y: scroll;
+    height: 400px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+  }
+
+  #user-name {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #user-comment {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .enter-comment {
+    margin: auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border: none;
+  }
+
+  button {
+    background-color: Transparent;
+    border: none;
+    color: red;
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    -webkit-appearance: none;
+  }
+
+  #line {
+    display: block;
+  }
+
+  .tile_div button {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .commenter-icon {
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .commenter-name {
+    font-size: 24px;
+  }
+
+  #enter::placeholder {
+    text-align: center;
+  }
+
+  .enter-comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-icon {
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: scale(1.5);
+  }
+
+  /* Dispaly rating section */
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .display-rate-star {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Materials/icons/stars/star.png);
+    background-size: cover;
+    text-align: center;
+  }
+
+  #rate-text {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  #rating-no {
+    width: 80px;
+    height: 80px;
+  }
+
+  .read-more-btn {
+    display: none;
+  }
+
+  .divider {
+    background-color: #00247d;
+    height: 5px;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 2em;
+    font-size: 22px;
+  }
+
+  /* Favoutites button */
+
+  .add-favorites-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #fav-btn {
+    background: #c8102e;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    color: white;
+    width: 80%;
+  }
+
+  #fav-icon {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 60px;
+    height: 50px;
+  }
+
+  /* Rate section */
+
+  .star-rate-section-wrapper {
+    background: #c8102e;
+    width: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .star-rate-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rate-star {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .star-size {
+    height: 50px;
+    width: 50px;
+  }
+
+  #rate {
+    margin-top: 0px;
+    background: #00247d;
+    border-radius: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Nav to poi section */
+
+  .nav-to-poi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .go-back-section {
+    text-align: center;
+    margin-right: 600px;
+    margin-top: -200px;
+    opacity: 1;
+  }
+
+  #nav-back-image {
+    width: 90px;
+    height: 100px;
+  }
+
+  #back-text {
+    margin-top: 3px;
+    color: black;
+    font-size: 24px;
+  }
+
+  .go-next-section {
+    text-align: center;
+    margin-left: 80px;
+    margin-top: -200px;
+  }
+
+  #nav-forward-image {
+    margin-top: 3px;
+    width: 90px;
+    height: 100px;
+  }
+
+  #next-text {
+    margin-top: -3px;
+    color: black;
+    font-size: 24px;
+  }
+}
+
+/* iPad landscape */
+
+@media only screen and (min-width: 1366px) {
+  /* Body Content */
+
+  .ui-grid-a {
+    display: none;
+  }
+
+  .normal-view {
+    display: contents;
+  }
+
+  #poi-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  #poi-name {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  /* Comments section */
+
+  #comments-header-text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  #single-comment > p {
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 22px;
+  }
+
+  #comments {
+    background-color: #00247d;
+    overflow-y: scroll;
+    height: 400px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+  }
+
+  #user-name {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #user-comment {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .enter-comment {
+    margin: auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    background-color: white;
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border: none;
+  }
+
+  button {
+    background-color: Transparent;
+    border: none;
+    color: red;
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    -webkit-appearance: none;
+  }
+
+  #line {
+    display: block;
+  }
+
+  .tile_div button {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .commenter-icon {
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  #enter::placeholder {
+    text-align: center;
+  }
+
+  .enter-comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .commenter-name {
+    font-size: 24px;
+  }
+
+  #enter::placeholder {
+    text-align: center;
+  }
+
+  .enter-comment {
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-icon {
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: scale(1.5);
+  }
+
+  /* Dispaly rating section */
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .display-rate-star {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Materials/icons/stars/star.png);
+    background-size: cover;
+    text-align: center;
+  }
+
+  #rate-text {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-top: -15px;
+  }
+
+  #rating-no {
+    width: 80px;
+    height: 80px;
+  }
+
+  .read-more-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 15%;
+    padding: 5px;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+  }
+
+  .divider {
+    background-color: #00247d;
+    height: 5px;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 2em;
+    font-size: 22px;
+  }
+
+  /* Favoutites button */
+
+  .add-favorites-btn {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #fav-btn {
+    background: #c8102e;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    color: white;
+    width: 80%;
+  }
+
+  #fav-icon {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 60px;
+    height: 50px;
+  }
+
+  /* Rate section */
+
+  .star-rate-section-wrapper {
+    background: #c8102e;
+    width: 40%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .star-rate-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rate-star {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .star-size {
+    height: 50px;
+    width: 50px;
+  }
+
+  #rate {
+    margin-top: 0px;
+    background: #00247d;
+    border-radius: 0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Nav to poi section */
+
+  .nav-to-poi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .go-back-section {
+    text-align: center;
+    margin-right: 680px;
+    margin-top: -200px;
+    opacity: 1;
+  }
+
+  #nav-back-image {
+    width: 90px;
+    height: 100px;
+  }
+
+  #back-text {
+    margin-top: 3px;
+    color: black;
+    font-size: 24px;
+  }
+
+  .go-next-section {
+    text-align: center;
+    margin-left: 180px;
+    margin-top: -200px;
+  }
+
+  #nav-forward-image {
+    margin-top: 3px;
+    width: 90px;
+    height: 100px;
+  }
+
+  #next-text {
+    margin-top: -3px;
+    color: black;
+    font-size: 24px;
+  }
+}

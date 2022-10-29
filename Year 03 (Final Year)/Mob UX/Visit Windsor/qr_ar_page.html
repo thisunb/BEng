@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\qr_ar_page.css">
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" href="js/poi1_windsor_castle_gardens.js"></script>
+    <script src="js/qr_ar_functions.js"></script>
+    <script src="js/common_functions.js"></script>
+</head>
+
+<body>
+
+    <!-- Alert box -->
+
+    <div id="alert">
+        <h2 id="alert-heading">ALERT</h2>
+        <h4 id="alert-text"></h4>
+        <div class="remove-alert"><a id='remove-alert-btn' data-role="button" onClick="removeAlert()">OK</a></div>
+    </div>
+
+    <!-- Page -->
+
+    <div data-role="page" style="background: white;" id="page">
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">Site</a></li>
+            <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+            <li><a href="poi_list.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">User Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+        </ul>
+
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header 1-->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <a href="#" id="back-btn" data-rel="back"
+                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"
+                    data-role="button">Back</a>
+                <h1 id="header-text">AR Experience</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img class="refresh-icon" id="refresh"  src="Materials\icons\refresh.png">
+                </a>
+            </div>
+        </header>
+
+        <!-- AR Section -->
+
+        <div>
+            <h3 id="message-text">Experience AR effects here!</h3>
+        </div>
+
+        <div class='normal-view'>
+            <div class="ui-content">
+                <div class="ui-grid-b ui-responsive" style="padding: 10px;">
+                    <div class="container">
+                        <iframe class="content" id="ar-scanner" src="ar_scanner.html" allowfullscreen></iframe>
+                        <div id="ar-overlay" class="overlay">
+                            <div class="view-btn-wrapper">
+                                <a class="view-btn" id="view-ar-btn" data-role="button">Click to Scan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header 2 -->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <h1 id="header-text">QR Vision</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img class="refresh-icon" id="refresh" style="background: transparent;" src="Materials\icons\refresh.png">
+                </a>
+            </div>
+        </header>
+
+        <!-- QR Section -->
+
+        <div>
+            <h3 id="message-text">Scan your QR codes here!</h3>
+        </div>
+
+        <div class='normal-view'>
+            <div class="ui-content">
+                <div class="ui-grid-b ui-responsive" style="padding: 10px;">
+                    <div class="container" id="qr-container">
+                        <iframe class="content" style="margin-top: 20px;" id="qr-scanner"
+                            src="qr_scanner\qr_scanner.html"></iframe>
+                        <div id="qr-overlay" class="overlay">
+                            <div class="view-btn-wrapper">
+                                <a class="view-btn" id="view-qr-btn" data-role="button">Click to Scan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qr-result-text-wrapper">
+            <a id="link" style="text-decoration: none;" href="">
+                <h3 id="qr-result-text"></h3>
+            </a>
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer data-role="footer" class="footer">
+            <h3 id="footer-text">Designed by MobUX</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

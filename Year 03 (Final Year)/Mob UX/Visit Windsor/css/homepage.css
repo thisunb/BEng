@@ -1,0 +1,212 @@
+html {
+    scroll-behavior:smooth;
+}
+
+* { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+
+/* iPhone portrait */
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+
+    .ui-grid-a{
+        display: none;
+    }
+
+    .normal-view{
+        display:contents;
+    }
+
+    .page{
+        background-image: url(../Materials/landscape/windsor\ castle\ landscape.png);
+        background-position-x: -250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .visit_windsor_btn {
+        position: absolute;
+        padding: 10px;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: #C81010;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .h1{
+        text-align: left; 
+        padding-left: 30px;
+        font-size: 30px;
+        color: #00247D;
+        position: fixed !important;
+        top: 80px
+    }
+}
+
+
+/* iPhone landcape */
+
+@media only screen and (min-width: 377px) and (max-width: 812px) {
+
+    .ui-grid-a{
+        
+        display:contents;
+    }
+
+    .normal-view{
+        
+        display: none;
+    }
+
+    .page{
+        background-image: url(../Materials/landscape/windsor\ castle\ landscape.png);
+        background-position-y: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .visit_windsor_btn {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: #C81010;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer, .header{
+        background:#00247D;
+        padding: 5px
+    }
+
+    .footer{
+        padding: 5px;
+        width: 99%;
+    }
+    
+    #footer_text, #header_text{
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    .h1{
+        text-align: left; 
+        padding-left: 30px;
+        font-size: 30px;
+        color: #00247D;
+        position: fixed !important;
+        top: 80px
+    }
+
+    
+}
+
+
+/* iPad portrait */
+@media only screen and (min-width: 813px) and (max-width: 1024px) {
+
+    .ui-grid-a{
+        height: auto;
+        display: none;
+    }
+
+    .normal-view{
+        height: auto;
+        display:contents;
+    }
+
+    .page{
+        background-image: url(../Materials/landscape/windsor\ castle\ landscape.png);
+        background-position-y: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x:-150px ;
+    }
+
+    .visit_windsor_btn {
+        position: absolute;
+        padding: 20px;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: #C81010;
+        color: white;
+        font-size: 28px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .h1{
+        text-align: left; 
+        padding: 30px;
+        font-size: 50px;
+        color: #00247D;
+        position: fixed;
+        top: 130px;
+        left: 20px;
+        line-height: 80px;
+    }
+}
+
+
+/* iPad landscape */
+@media only screen and (min-width: 1366px) {
+
+    .ui-grid-a{
+        height: auto;
+        display: none;
+    }
+
+    .normal-view{
+        height: auto;
+        display:contents;
+    }
+
+    .page{
+        background-image: url(../Materials/landscape/windsor\ castle\ landscape.png);
+        background-position-y: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .visit_windsor_btn {
+        padding:20px;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: #C81010;
+        color: white;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .h1{
+        text-align: left; 
+        padding: 30px;
+        font-size: 50px;
+        color: #00247D;
+        position: fixed;
+        top: 130px;
+        left: 20px;
+        line-height: 80px;
+    }
+}

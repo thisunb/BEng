@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visit Windsor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="css\site_windsor_castle.css">
+    <link rel="stylesheet" type="text/css" href="css\common_styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" href="js\poi1_windsor_castle_gardens.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="js/favourites.js"></script>
+    <script src="js/common_functions.js"></script>
+    <script src="js\index.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Xsn2SJXvqpRbdF0vhlBNsFWbZZg2EeA&callback=initMap"></script>
+</head>
+
+<body>
+
+    <!-- Alert box -->
+
+    <div id="alert">
+        <h2 id="alert-heading">ALERT</h2>
+        <h4 id="alert-text"></h4>
+        <div class="remove-alert"><a id='remove-alert-btn' data-role="button" onClick="removeAlert()">OK</a></div>
+    </div>
+
+    <!-- Page -->
+
+    <div id="site-page" data-role="page" style="background: white;">
+
+
+        <!-- Nav section - iPhone-->
+
+        <div class="nav-iphone">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <a href="signup_login.html" rel="external">
+                <div class="user-icon-wrapper">
+                    <img id="user-icon" src="Materials\icons\user-icon-nav.png">
+                </div>
+            </a>
+
+            <div class="hamburger-icon-wrapper">
+                <img id="hamburger-icon" src="Materials\icons\hamburger.png">
+            </div>
+        </div>
+
+        <ul data-role="listview" id="link-list" style="display:none">
+            <li><a href="site_windsor_castle.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">Site</a></li>
+            <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+            <li><a href="poi_list.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">POI
+                    List
+                </a></li>
+            <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+            <li><a href="user_profile.html" rel="external" id="link-item"
+                    style="background: #b7caf7; color: black;">User Profile</a></li>
+            <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+            <li><a href="my_bookings.html" rel="external" id="link-item" style="background: #b7caf7; color: black;">My
+                    Bookings</a></li>
+            <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+        </ul>
+
+
+        <!-- Nav section - iPad -->
+
+        <div class="nav-ipad" id="navbar">
+            <div class="nav-icon-wrapper">
+                <img id="nav-icon" src="Materials\icons\app-logo.png">
+            </div>
+
+            <div class="nav-heading">
+                <h3 id="nav-head">Visit Windsor</h3>
+            </div>
+
+            <div data-role="navbar" id="inner-navbar">
+                <ul id="inner-navbar-container">
+                    <li><a href="site_windsor_castle.html" rel="external" id="link-item">Site</a></li>
+                    <li><a href="signup_login.html" rel="external" id="link-item">Login</a></li>
+                    <li><a href="poi_list.html" rel="external" id="link-item">POI List </a></li>
+                    <li><a href="poi_ratings.html" rel="external" id="link-item">POI Ratings </a></li>
+                    <li><a href="user_profile.html" rel="external" id="link-item">User Profile</a></li>
+                    <li><a href="favourites.html" rel="external" id="link-item">My Favourites</a></li>
+                    <li><a href="my_bookings.html" rel="external" id="link-item">My Bookings</a></li>
+                    <li><a href="about_us.html" rel="external" id="link-item">About us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header -->
+
+        <header data-role="header" class='header' id="head">
+            <div class="content-wrapper">
+                <a href="#" id="back-btn" data-rel="back"
+                    class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"
+                    data-role="button">Back</a>
+                <h1 id="header-text">Site</h1>
+            </div>
+            <div class="scan-icon-wrapper">
+                <a href="qr_ar_page.html" rel="external">
+                    <img id="scan-icon" src="Materials\icons\scan-icon.png">
+                </a>
+            </div>
+        </header>
+
+        <!-- Normal view (Video + Map + POI list) - iPhone portrait, ipad portrait -->
+
+        <div class='normal-view'>
+
+            <iframe id='site-video' src="https://www.youtube.com/embed/7zO7MfnAzoA?autoplay=1&mute=1&enablejsapi=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <hr class='divider'>
+            <p class='description' id='des'>
+                <strong>Windsor Castle</strong></br>
+                is the oldest and largest occupied castle in the world. It is open to visitors throughout the year.
+                Founded by William the Conqueror in the 11th century, it has since been the home of 39 monarchs. Today
+                The Queen spends most of her private weekends at the Castle.
+            </p>
+            <hr class='divider'>
+            <h3 style="text-align: center;" id='main-headings'>WHERE IS IT?</h3>
+            <hr class='divider'>
+            <div id='map'></div>
+            <hr class='divider'>
+            <h3 style="text-align: center;" id='main-headings'>WHAT TO WATCH?</h3>
+
+            <a href="poi2_albert_memorial_chapel.html" rel="external">
+                <div>
+                    <img id="poi_list_image" src="Materials\landscape\albert-memorial-chapel-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Albert Memorial Chapel</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi7_change_the_guard.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\change-the-guard-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Change The Guard</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi4_towers.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\curfew-tower-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Curfew Tower</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi6_queen_mary_doll_house.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\queens-marys-dolls-house-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Queen Mary's Doll's House</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi3_great_home_parks.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\great-home-parks-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Great & Home Parks</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi9_semi_state_rooms.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\semi-state-rooms-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Semi-State Rooms</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi1_windsor_castle_gardens.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\windor-castle-gardens-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Windsor Castle Gardens</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi10_state_apartments.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\state-apartments-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>State Apartments</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi5_waterloo_chamber.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\waterloo-chamber-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>Waterloo Chamber</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="poi8_st_george_chapel.html" rel="external">
+                <div style="margin-top: 5px;">
+                    <img id="poi_list_image" src="Materials\landscape\st.georges-chapel-landscape.png">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <div class="poi_list_name">
+                            <h4 id='poi_list_name_text'>St. George's Chapel</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- iPhone landscape grid view (upper section) -->
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <iframe id='site-video' src="https://www.youtube.com/embed/7zO7MfnAzoA?autoplay=1&mute=1&enablejsapi=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <h3 style="text-align: center;" id='main-headings'>WHERE IS IT?</h3>
+            <hr class='divider'>
+            <div class="ui-block-b">
+                <div id='map2'></div>
+            </div>
+
+            <hr class='divider'>
+            <p class='description' id='des'>
+                <strong>Windsor Castle</strong></br>
+                is the oldest and largest occupied castle in the world. It is open to visitors throughout the year.
+                Founded by William the Conqueror in the 11th century, it has since been the home of 39 monarchs. Today
+                The Queen spends most of her private weekends at the Castle.
+            </p>
+            <hr class='divider'>
+            <h3 style="text-align: center;" id='main-headings'>WHAT TO WATCH?</h3>
+            <hr class='divider'>
+        </div>
+
+
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="poi2_albert_memorial_chapel.html" rel="external">
+                    <div>
+                        <img id="poi_list_image" src="Materials\landscape\albert-memorial-chapel-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Albert Memorial Chapel</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi7_change_the_guard.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\change-the-guard-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Change The Guard</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi4_towers.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\curfew-tower-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Curfew Tower</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi6_queen_mary_doll_house.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\queens-marys-dolls-house-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Queen Mary's Doll's House</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi3_great_home_parks.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\great-home-parks-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Great & Home Parks</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="ui-block-b" style="margin-top: -5px;">
+                <a href="poi9_semi_state_rooms.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\semi-state-rooms-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Semi-State Rooms</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi1_windsor_castle_gardens.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\windor-castle-gardens-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Windsor Castle Gardens</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi10_state_apartments.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\state-apartments-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>State Apartments</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi5_waterloo_chamber.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\waterloo-chamber-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>Waterloo Chamber</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="poi8_st_george_chapel.html" rel="external">
+                    <div style="margin-top: 5px;">
+                        <img id="poi_list_image" src="Materials\landscape\st.georges-chapel-landscape.png">
+                        <div style="display: flex; justify-content: flex-end;">
+                            <div class="poi_list_name">
+                                <h4 id='poi_list_name_text'>St. George's Chapel</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Lower section -->
+
+        <div>
+            <h4 class='reserve-ticket-text'> Reserve tickets now to get an exciting experience!!!</h4>
+            <a href="booking_form.html" rel="external" class="book-windsor-button" data-role="button">Book Windsor</a>
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer data-role="footer" class="footer">
+            <h3 id="footer-text">Designed by MobUX</h3>
+        </footer>
+
+
+        <!-- Functions -->
+
+        <script>
+            var clickCount = 0;
+            $("#hamburger-icon").click(function () {
+                if (clickCount % 2 == 0) {
+                    $(document.getElementById("link-list").style.display = "contents");
+                    $(clickCount++);
+                }
+                else {
+                    $(document.getElementById("link-list").style.display = "none");
+                    $(clickCount++);
+                }
+            });
+        </script>
+
+    </div>
+
+</body>
+
+</html>
