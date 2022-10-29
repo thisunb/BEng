@@ -1,0 +1,169 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+
+.Uppersection {
+	box-sizing: content-box;
+	width:1500px;
+	height: 40px;
+	background-color: #0B352D;
+	 
+}
+
+
+										/*-------Heading-----*/
+.topic {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 10px;
+	color:  #E3F4F1 ;
+}
+
+/*-------------------------------------------------End of the Body ---------------------------------------------------------------*/
+
+
+/*-------------------------------------------------Start of the Sitemap in the body---------------------------------------------------------------*/
+
+											
+
+#rect:hover{
+    fill:yellow;
+    stroke: chartreuse;
+}
+
+#txt:hover{
+    fill: white;
+}
+
+#sector1:hover{
+
+    fill:mediumpurple;
+    stroke:black;
+}
+
+#txt1:hover{
+    fill:tan;
+}
+
+#svg1 {
+	position: absolute;
+	top: 180px;
+	margin-left: 670px;	
+}
+
+#svg2 {
+	position: absolute;
+	top: 300px;
+	margin-left: 670px;	
+}
+
+#svg3 {
+	position: absolute;
+	top: 420px;
+	margin-left: 670px;
+}
+
+#svg4 {
+	position: absolute;
+	top: 540px;
+	margin-left: 670px;
+}
+
+#svg5 {
+	position: absolute;
+	top: 780px;
+	margin-left: 670px;	
+}
+
+#svg6 {
+	position: absolute;
+	top: 900px;
+	margin-left: 670px;	
+}
+
+#svg7 {
+	position: absolute;
+	top: 1020px;
+	margin-left: 670px;	
+}
+
+#svg8 {
+	position: absolute;
+	top: 1140px;
+	margin-left: 670px;	
+}
+
+
+			/*---------------Editors Section in the Sitemap------------*/
+
+
+.container1 {
+	box-sizing: content-box;
+	width: 1500px;
+	height: 130px;
+	border-radius: 20px;
+	position: absolute;
+	top: 650px;
+	background-image: url(images/background3.jpg);	
+}
+
+.shalitha {
+	position: absolute;
+	top: 45px;
+	margin-left: 375px;	
+	
+}
+
+.thisun {
+	position: absolute;
+	top: 45px;
+	margin-left: 575px;
+}
+
+.mahesha {
+	position: absolute;
+	top: 45px;
+	margin-left: 775px;
+}
+
+.avishka {
+	position: absolute;
+	top: 45px;
+	margin-left: 975px;
+}
+
+
+/*------------------------------------------------------End of the Sitemap in the body---------------------------------------------------------------*/
+
+
+	/*-------------------------- images----------------------------- */
+
+.upperleftimage {
+	position: absolute;
+	top: 190px;
+}	
+
+.upperrightimage {
+	position: absolute;
+	top: 190px;
+	margin-left: 850px;
+}
+
+.lowerleftimage {
+	position: absolute;
+	top: 790px;
+}
+
+.lowerrightimage {
+	position: absolute;
+	top: 790px;
+	margin-left: 850px;
+}
+
+
+
+
+
+
+
+

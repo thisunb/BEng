@@ -1,0 +1,126 @@
+.container {
+	box-sizing: content-box;
+	position: absolute;
+	top: 210px;
+	margin-left:370px;
+}
+
+									/* Heading */
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	margin-left: 2%;
+	margin-top: 0%;
+	color:  #E3F4F1   ;
+}
+
+
+								
+#grid{								/* Quiz Content */
+	width:620px;
+	height:500px;
+	margin:0 auto;
+	background-image: url(images/original.gif);
+	background-repeat: no-repeat;
+	background-size: 740px 560px;
+	background-attachment: scroll;
+	padding:10px 50px 50px 50px;
+	border:2px solid #CBCBCB;
+	
+}
+
+#grid h1{
+	font-family:"Lato",sans-serif;
+	text-align:center;
+	-webkit-text-stroke: 1px black;
+	font-size:60px;
+	color:#40E0D0;
+	text-decoration-color: #1C1E21;
+	padding: 2px 0px;
+}
+
+.buttons{
+	margin-top:20px;
+	padding: auto;
+	text-align: center;
+}
+
+.choice{
+	display: inline-block;
+  	padding: 15px 25px;
+  	font-size: 15px;
+  	cursor: pointer;
+  	text-align: center;
+  	text-decoration: none;
+  	outline: none;
+  	color: #fff;
+  	background-color: #4CAF50;
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+}
+
+.choice:hover{
+	background-color: #3e8e41
+}
+
+.choice:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+ }
+
+
+
+#question{
+	background-color: #FFFFFF;
+	padding:10px;
+	font-size:20px;
+	color:#5A6772;
+	border-radius: 20px;
+	font-family:"Lato",sans-serif;
+
+}
+
+.result{
+	position: absolute;
+	top: 150px;
+	margin-left: 80px;
+ 	height:100px;
+ 	width: 400px;
+ 	text-align:center;
+ 	color: #FFFFFF;
+ 	font-size: 60px;
+ 	padding:20px 50px 50px 50px;
+ 	border: 5px solid blue;
+ 	border-radius: 10px;
+ 
+ }
+
+
+article {
+    width: 100px;
+    text-align: center;
+    background-color: #f4511e;
+    border-radius: 10px;
+    margin: 10px auto 10px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+article h3 {
+    padding: 5px;
+    color: #FFFFFF;
+}
+article .count {
+    padding: 5px;
+}
+article #timer{
+    padding: 5px;
+    color: crimson;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+

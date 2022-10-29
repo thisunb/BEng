@@ -1,0 +1,119 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+				
+											/*-------Heading-----*/
+											
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 20px;
+	color:  #E3F4F1;
+}
+
+.container {
+	width: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*-------------------------------------------------End of the Body ---------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------Start of the Description in the body-----------------------------------------------*/
+
+
+#para1{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 230px;
+	width: 1480px;
+	position: absolute;
+	top: 790px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);	
+}
+
+#para2{
+	box-sizing: content-box;
+	padding: 10px; 
+	height: 710px;
+	width: 730px;
+	position: absolute;
+	top: 1050px;
+	margin-left: 750px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;	
+	background-image: url(images/background2.jpg);
+}
+
+#para3{
+	box-sizing: content-box;
+	padding: 10px; 
+	height: 510px;
+	width: 720px;
+	position: absolute;
+	top: 1785px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*----------------------------------------------------End of the Description in the body-----------------------------------------------*/
+
+
+
+
+
+
+
+/*-------------Images--------------*/
+
+.upperimage {
+	position: absolute;
+	top: 210px;
+}		
+
+.lowerimage {
+	position: absolute;
+	top: 1450px;
+}	
+
+.image3 {
+	position: absolute;
+	top: 1070px;
+}
+
+
+	/*--------------------Videos---------------------- */
+			
+#video {
+	position: absolute;
+	top: 1805px;
+	margin-left: 750px;
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+
+											/*-------Heading-----*/
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 20px;
+	color:  #E3F4F1;
+}
+
+.container {
+	width: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*-------------------------------------------------End of the Body ---------------------------------------------------------------*/
+
+
+
+.description {
+	box-sizing: content-box;
+	background-image: url(images/background3.jpg);
+	color:white;
+	font-size: 30px;
+	position: absolute;
+	top: 210px;
+	margin-left: 7px;
+	padding: 10px;
+}
+
+#topic {
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 80px;
+	position: absolute;
+	top: 80px;
+}
+							/* Description Links */
+#linkset:hover {
+	color: #E4FCB3;
+}
+
+#linkset {
+	color: white;
+	font-family: Brush Script MT;
+}
+
+#linkset2 {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+

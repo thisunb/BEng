@@ -1,0 +1,94 @@
+.container{
+    width: 1500px;
+    position: absolute;
+	top: 205px;
+}
+
+								/*-------Heading-----*/
+h1{
+    text-align: center;
+    font-family: Brush Script MT;
+    color: azure;
+    font-size: 80px;
+	position: absolute;
+	top:25px;
+}
+
+p{
+    color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 23px;
+}
+						/*-------Video-----*/
+.iframe{
+    position: absolute;
+    margin-left: 50%;
+    width: 50%;
+	
+    
+}
+
+										/*-------Description-----*/
+.para1{
+    box-sizing: content-box;
+	background-image: url(images/background3.jpg);
+}
+
+.para2{
+    box-sizing: content-box;
+    position: absolute;
+	top: 1290px;
+    width: 49.5%;
+	height: 600px;
+	background-image: url(images/background3.jpg);	
+}
+
+.para3{
+    box-sizing: content-box;
+    position: absolute;
+	top: 1900px;
+    width: 100%;
+	height: 400px;
+	background-image: url(images/background3.jpg);	
+}
+
+span {
+	font-family: Brush Script MT;
+	font-size: 35px;
+	color: white;
+}
+
+
+#hotel1 {
+	position: absolute;
+	top: 2270px;
+	margin-left: 150px;
+	color: white;
+	
+}
+
+#hotel2 {
+	position: absolute;
+	top: 2270px;
+	margin-left: 500px;
+	color: white;
+	
+}
+
+#hotel3 {
+	position: absolute;
+	top: 2270px;
+	margin-left: 820px;
+	color: white;	
+}
+
+#hotel4 {
+	position: absolute;
+	top: 2270px;
+	margin-left: 1200px;
+	color: white;
+	
+}
+

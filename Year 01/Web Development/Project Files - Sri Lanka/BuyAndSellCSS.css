@@ -1,0 +1,405 @@
+									/*-------Heading-----*/
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	margin-left: 10px;
+	top: 0px;
+	color:  #E3F4F1;
+}
+
+
+.container {
+	width: 1500px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+							/*--------Images-----------*/
+
+.image1 {
+	position: absolute;
+	top: 205px;
+	margin-left: 1095px; 
+}
+
+.image2 {
+	position: absolute;
+	top: 575px;
+	margin-left: 1095px; 
+}	
+
+.image3 {
+	position: absolute;
+	top: 925px;
+	margin-left: 1095px; 
+}
+
+.image4 {
+	position: absolute;
+	top: 1305px;
+	margin-left: 1095px; 
+}
+
+					/*--------Buttons for Font size increase----------*/
+.fontIncrease {
+	position: absolute;
+	top: 176px;
+	margin-left: 1042px;
+}
+
+.fontIncrease input[type="button"] {
+	background-color: #0B352D;
+	color: white;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+							
+						/*--------Form-----------*/
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+
+  .required {
+    color: red;
+  }
+
+  .formStyle{
+	  position: absolute;
+	  top: 205px;
+	  width: 1090px;
+	  height: 1470px;
+      padding: 10px 20px;
+      background-color: #C0B89C;
+      padding: 20px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .formStyle fieldset{
+      border: groove;
+  }
+  .formStyle legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+  }
+ 
+ 
+  .formStyle input[type="text"],
+  .formStyle input[type="email"],
+  .formStyle textarea{
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: rgba(255,255,255,.1);
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      margin: 0;
+      outline: 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;  
+      background-color: #e8eeef;
+      color:black;
+      margin-bottom: 30px;
+  }
+  .formStyle input[type="text"]:focus,
+  .formStyle input[type="email"]:focus,
+  .formStyle textarea:focus,
+  .formStyle select:focus{
+      background: #d2d9dd;
+  }
+ 
+  .formStyle .number {
+      background: #1abc9c;
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 15px px 15px 0px;
+  }
+  
+  .formStyle input[type="submit"],
+  #PlaceOrder
+  {
+      position: relative;
+      display: block;
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      margin: 0 auto;
+      background: rgb(112, 33, 33);
+	  position: absolute;
+	  top: 1407px;
+	  margin-left: 1px;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      width: 96%;
+      border-width: 1px 1px 3px;
+      margin-bottom: 10px;
+  }
+  .formStyle input[type="submit"]:hover,
+  .formStyle input[type="button"]:hover
+  {
+      background: #109177;
+  }
+  .product{
+	float: left;
+	background-color: white;
+	margin: 10px 10px 0 0;
+    width:234px;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    padding: 10px 10px;
+    height: 200px;
+    display: flex;
+  }
+   
+   
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+
+  .image {
+    margin-right: 50px;
+  }
+   
+  .description {
+    padding-top: 10px;
+    margin-right: 20px;
+    width: 200px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: rgb(14, 6, 56);
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #45433B;
+	font-weight: bold;
+  }
+  .quantity {
+    padding-top: 20px;
+    margin-right: 20px;
+    width: 150px;
+  }
+  .quantity input[type="text"] {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 40px;
+    height: 25px;
+    font-size: 15px;
+    color: #43484D;
+    font-weight: 300;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    border: none; 
+    cursor: pointer;
+    background-color: Transparent;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+    margin-left: 65%;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+    margin-right: 6px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:20px;
+  }
+  .total-price {
+    width: 83px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number1, #number2, #number3 {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+ }
+ .button {
+ 
+  background-color: rgb(112, 33, 33);
+  border: white;
+  color: rgb(248, 241, 241);
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup #content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+
+
+

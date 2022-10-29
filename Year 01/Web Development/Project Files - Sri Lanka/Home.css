@@ -1,0 +1,140 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+
+
+											/*-------Heading-----*/
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 20px;
+	color:  #E3F4F1;
+}
+
+.container {
+	width: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*-------------------------------------------------End of the Body ---------------------------------------------------------------*/
+
+
+										/* Search Bar */
+
+#search {
+	width: 200px;
+	height: 23px;
+	background-color: white;
+}
+
+#submit {
+	width: 150px;
+	height: 30px;
+	background-color: #0B352D ;
+	color: white;
+}
+
+.searchbar {
+	position: absolute;
+	margin-left: 860px;
+	top: 16px;
+}
+
+
+												
+												
+												
+									/* images */
+
+.homepageimage1 {
+	position: absolute;
+	top: 210px;
+}	
+
+.homepageimage2 {
+	position: absolute;
+	top: 1320px;
+	margin-left: 790px;
+}		
+
+.homepageimage3 {
+	position: absolute;
+	top: 1320px;
+}
+
+								/* Embedded Video */
+#video1 {
+	position: absolute;
+	top: 930px;
+	margin-left: 790px;
+}
+	
+	/*--------------------------------------------------------Start of the Description in the body--------------------------------------------*/
+	
+#description1 {
+	box-sizing: content-box;
+	padding: 10px;
+	height: 630px;
+	width: 575px;
+	position: absolute;
+	top:190px;
+	margin-left: 905px;
+	color:   #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}	
+	
+#description2 {
+	box-sizing: content-box;
+	padding: 10px;
+	height: 30px;
+	width: 1480px;
+	position: absolute;
+	top: 850px;
+	color:   #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}	
+
+#description3 {
+	box-sizing: content-box;
+	padding: 10px;
+	height: 365px;
+	width: 760px;
+	position: absolute;
+	top: 910px;
+	color:   #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+	
+span {
+	font-size: 45px;
+	font-family: Brush Script MT;
+}	
+
+/*--------------------------------------------------------End of the Description in the body--------------------------------------------*/
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+

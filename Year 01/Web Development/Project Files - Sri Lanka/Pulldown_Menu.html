@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+	<link rel="stylesheet" href="Pulldown_Menu.css">
+</head>
+
+<body>
+
+<style>
+
+	body {
+		background-color: black;
+		color: white;
+	}
+
+	h1 {
+		font-size: 100px;
+		font-family: Brush Script MT;
+		position: absolute;
+		left: 20px;
+		margin-top: 5px;
+	}
+	
+
+
+    #purple{
+        background-color: #8634eb;
+    }
+	
+    #green{
+        background-color: #628f5e;
+    }
+	
+    #yellow{
+        background-color: #fcd00d;
+    }
+
+    #teal{
+        background-color: #0dfcb1;
+    }
+	
+    #orange{
+        background-color: #f07256;
+    }
+	
+    #lightblue{
+        background-color: #5678f0;
+    }
+
+   
+   
+   #image1{
+		position: absolute;
+		top: 270px;
+		margin-left: 20px;
+    }  
+   
+   #image2{
+        
+		position: absolute;
+		top: 270px;
+		margin-left: 280px;
+    } 
+	
+	#image3{
+        
+		position: absolute;
+		top: 430px;
+		margin-left: 20px;
+    }  
+	
+	#image4{
+		position: absolute;
+		top: 430px;
+		margin-left: 280px;
+    }  
+	
+	#image5{   
+		position: absolute;
+		top: 590px;
+		margin-left: 150px;
+    }  
+
+	#enlarge {
+		border: 5px groove white;
+		position: absolute;
+		top: 205px;
+		margin-left: 600px;
+	}
+	
+    h2{
+        font-family: sans-serif;
+        font-size: 20px;
+        position: absolute;
+		top: 200px;
+		margin-left: 10px;
+    }
+	
+	center {
+		position: absolute;
+		top: 120px;
+		margin-left: 380px;
+	}
+	
+	#container1 {
+		width: 230px;
+	}
+	
+	.container {
+		width: 1500px;
+	}
+	
+
+	.section {
+		box-sizing: content-box;
+		width: 550px;
+		height: 540px;
+		border: 5px groove white;
+		background-color: black;
+	}
+
+
+</style>
+<script>
+    function bckgroundcolor() {
+
+        var color = document.getElementById("container1");
+        var bckcolor = color.options[color.selectedIndex].value;
+        document.body.style.backgroundColor=bckcolor;
+    }
+
+    
+    function fontcolor(){
+		
+		var fontcolor = document.getElementById("container2").value;
+		document.body.style.color=fontcolor;
+		}
+
+
+		function newImage1() {
+            document.getElementById("enlarge").src = "images/galle face text.jpg";
+        }
+
+        function oldImage1() {
+            document.getElementById("enlarge").src = "images/EnlargeImage.jpg";
+        }
+
+  
+        function newImage2() {
+            document.getElementById("enlarge").src = "images/Ssigiriya text.jpg";
+        }
+
+        function oldImage2() {
+            document.getElementById("enlarge").src = "images/EnlargeImage.jpg";
+        }
+		
+
+        function newImage3() {
+            document.getElementById("enlarge").src = "images/trincomalee text.jpg";
+        }
+
+        function oldImage3() {
+            document.getElementById("enlarge").src = "images/EnlargeImage.jpg";
+        }
+
+
+        function newImage4() {
+            document.getElementById("enlarge").src = "images/elle text.jpg";
+        }
+
+        function oldImage4() {
+            document.getElementById("enlarge").src = "images/EnlargeImage.jpg";
+        }
+
+
+        function newImage5() {
+            document.getElementById("enlarge").src = "images/kandy text.jpg";
+        }
+
+        function oldImage5() {
+            document.getElementById("enlarge").src = "images/EnlargeImage.jpg";
+        }
+</script>
+
+		<!------------------------------------------------Start of the Navigation Pane------------------------------------------------------------------>
+		<div class = "container">	
+			<div class = "navigation1">	
+				<nav>
+					<ul>
+						<li><a href="Home.html" id = "nava1">Home</a></li> 
+						<li><a href="BuyAndSell.html" id = "nava1">Products</a></li>
+						<li><a href="Locations.html"id = "nava1">Locations</a></li> 
+						<li><a href="Sitemap.html" id = "nava1">Site Map</a></li> 
+						<li><a href= "Quiz.html" id = "nava1">Quiz</a></li>
+						<li><a href="Pulldown_Menu.html" id = "nava1">Images</a></li> 
+						<li><a href="AboutUs.html" id = "nava1">About Us</a></li>
+						<li><a href="ContactUs.html" id = "nava1">Contact Us</a></li> 
+						<li><a href="RateUs.html" id = "nava1">Rate Us</a></li> 
+					</ul>
+				</nav>	
+			</div>	
+
+		<!------------------------------------------------End of the Navigation Pane------------------------------------------------------------------>
+
+			<!----Logo---->
+				
+				<div class = "logo">																								
+					<img src = "images/logo.png" width = "200px" height = "50px">
+				</div>
+
+
+			<!----Flag---->
+		
+			<div class = "flag">	
+				<a href = "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" target = "_blank"> <img src = "images/flag.gif" width="400px" height="140px"> </a>
+			</div>
+
+
+
+			<h1><strong> Images </strong></h1>
+
+					<br><br><br><br><br>
+
+		<center>
+
+	<!------------------------------------------------Color Selection for Font and Background----------------------------------------------------------------->
+
+			<select id="container1">
+				<option value="" selected hidden>--Select Background Color--</option>
+				<option id="purple"  value = "#8634eb">Purple</option>
+				<option  id="green"  value = "#628f5e">Green</option>
+				<option  id="yellow"  value = "#fcd00d">Yellow</option>
+			</select>
+			
+			<button onclick="bckgroundcolor()">Change</button>		&emsp;&emsp;
+
+			<select id="container2">
+				<option selected hidden>--Select Font Color--</option>
+				<option name = "font" value = "#0dfcb1" id="teal">Teal</option>
+				<option name = "font" value = "#f07256" id="orange">Orange</option>
+				<option name = "font" value = "#5678f0" id="ligtblue">Lightblue</option>
+			</select>
+			
+			<button onclick="fontcolor()">Change</button>
+
+		</center>
+
+		<br><br><br>
+		<div class  = "section">
+		<p id="para1"><h2><i>This web page contains several attractive images which <br>&emsp;&emsp;&emsp;&emsp;&emsp;reflect the beauty of Sri Lanka. </i><br>
+		</h2></p>
+
+
+		<br><br>
+
+	<!---------------Form------------------->
+
+		<form id="form1">
+			<img onmouseover="newImage1()" onmouseout="oldImage1()" src="images/Think-SriLanka-Colombo-528830827-AsianDream-copy.jpg" width="250" height="150" id="image1"/>
+			<img onmouseover="newImage2()" onmouseout="oldImage2()" src="images/sigiriya.jpg" width="250" height="150" id="image2"/>
+			<img onmouseover="newImage3()" onmouseout="oldImage3()" src="images/Bay_of_Trincomalee.jpg" width="250" height="150" id="image3"/>
+			<img onmouseover="newImage4()" onmouseout="oldImage4()" src="images/photo-1566296314736-6eaac1ca0cb9.jfif" width="250" height="150" id="image4"/>
+			<img onmouseover="newImage5()" onmouseout="oldImage5()" src="images/06.jpg" width="250" height="150" id="image5"/>
+			
+		</div>	
+		
+		<!----Enlarged Image (For preview)---->
+		
+			<img src = "images/EnlargeImage.jpg" width = "890" height = "535" id ="enlarge">
+			
+		</form>
+</body>
+
+				<!-------------------------------------------------------Start of the Footer------------------------------------------------------------>
+	
+		<div class = "footer"> 
+			<div class = "connectuscolumn">
+				<div id = "connectustext"> Connect with us  </div>
+					<a href = "https://www.facebook.com/" target = "_blank"> <img src = "images/facebook.png" height = "50px" width = "50px" id = "facebook"> </a>
+					<a href = "https://www.linkedin.com/" target = "_blank"> <img src = "images/linkedin.png" height = "50px" width = "50px" id = "linkedin"> </a>
+					<a href = "https://twitter.com/login?lang=en" target = "_blank"><img src = "images/twitter.png" height = "50px" width = "50px" id = "twitter"> </a>
+					<a href = "https://www.instagram.com/accounts/login/" target = "_blank"><img src = "images/instagram.jpg" height = "50px" width = "50px" id = "instagram"> </a>
+			</div>	
+				
+			<div class = "contactuscolumn">	
+				<div id = "contactustext"> Contact us </div> 	
+				<div id = "mobile"> +94770428327 , <a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank"id = "email"> TravelSriLanka@gmail.com </a></div>						
+					
+				<a href = "https://www.whatsapp.com/" target = "_blank"> <img src = "images/whatsapp.png" height = "53px" width = "53px" id = "whatsapp"> </a>
+				<a href = "https://www.viber.com/" target = "_blank"> <img src = "images/viber.png" height = "50px" width = "50px" id = "viber"> </a>
+				<a href = "https://imo.im/" target = "_blank"> <img src = "images/imo.png" height = "53px" width = "53px" id = "imo"> </a>
+				<a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank"> <img src = "images/gmail.png" height = "63px" width = "53px" id = "gmail"> </a>	
+			</div>
+			
+			
+			<div class = "navigation2">
+				<nav id = "nav2">
+					<ul id = "ul2">																			 <br>
+						<li id = "li2"><a href="Home.html" id = "nava2"><u>Home</u></a></li> 
+						<li id = "li2"><a href="BuyAndSell.html"id = "nava2"><u>Products</u></a></li>
+						<li id = "li2"><a href="Locations.html"id = "nava2"><u>Locations</u></a></li> 
+						<li id = "li2"><a href="RateUs.html" id = "nava2"><u>Rate Us</u></a></li> 			 <br><br>
+						<li id = "li2"><a href="ContactUs.html" id = "nava2"><u>Contact Us</u></a></li> 
+						<li id = "li2"><a href="AboutUs.html" id = "nava2"><u>About Us</u></a></li> 
+						<li id = "li2"><a href="Sitemap.html" id = "nava2"><u>Site Map</u></a></li> 
+						<li id = "li2"><a href="Quiz.html" id = "nava2"><u>Quiz</u></a></li>						 <br>
+						<li id = "li2"><a href="PageEditor_Mahesha.html" id = "nava2"><u>Page Developer</u></a></li> 	
+					</ul>
+					
+					
+					<!-----------Editor's Page-------->
+					
+					<div class = "selection">
+						<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+							<option value = "select">----Page Editors----</option>
+							<option value = "PageEditor_Shalitha.html">Shalitha Praveen </option>
+							<option value = "PageEditor_Thisun.html"> M.R.T.T.Bandara </option>
+							<option value = "PageEditor_Mahesha.html"> Mahesha Piyumantha </option>
+							<option value = "PageEditor_Avishka.html"> Avishka Jayawardhana</option>
+						</select>
+					</div>		
+				</nav>
+			</div>
+		</div>
+		
+			<!-------------------------------------------------------End of the Footer------------------------------------------------------------>
+		</div>	
+</html>

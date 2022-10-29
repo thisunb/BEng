@@ -1,0 +1,314 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "Locations.css" >
+		<link rel = "stylesheet" type = "text/css" href = "Locations2.css" >
+		
+		<title>
+			Locations Page
+		</title>
+		
+		
+		<!-------------------------------------------- Adding the Searchbar------------------------------------>
+		
+		
+		<script>
+			function search(){
+					var search = document.getElementById("search").value;
+					if (search == "ella") 
+					{
+						window.location.href = "EllaSriLanka.html";
+					}
+					
+					else if (search == "anuradhapura" || search == "Anuradhapura" || search == "ANURADHAPURA") 
+					{
+						window.location.href = "Anuradhapura.html";
+					}
+					
+					else if (search == "jaffna" || search == "Jaffna" || search == "JAFFNA") 
+					{
+						window.location.href = "Jaffna.html";
+					}
+					
+					else if (search == "hambantota" || search == "Hambantota" || search == "HAMBANTOTA") 
+					{
+						window.location.href = "Hambantota.html";
+					}
+					
+					else if (search == "nuwara eliya" || search == "Nuwara Eliya" || search == "Nuwara eliya" || search == "NUWARA ELIYA" || search == "Nuwaraeliya" || search == "nuwaraeliya" || search == "NuwaraEliya") 
+					{
+						window.location.href = "NuwaraEliya.html";
+					}
+					
+					else if (search == "places" || search == "beautiful places") 
+					{
+						window.location.href = "Locations.html";
+					}
+					
+					else if (search == "polonnaruwa" || search == "Polonnaruwa" || search == "POLONNARUWA") 
+					{
+						window.location.href = "Polonnaruwa.html";
+					}
+					
+					else if (search == "trincomalee" || search == "Trincomalee" || search == "TRINCOMALEE" ||search == "trinco") 
+					{
+						window.location.href = "Trincomalee.html";
+					}
+					
+					else if (search == "kandy" || search == "Kandy" || search == "KANDY" || search == "temple of tooth" || search == "Temple of tooth") 
+					{
+						window.location.href = "TempleOfTooth.html";
+					}
+					
+					else if (search == "sigiriya" || search == "Sigiriya" || search == "SIGIRIYA") 
+					{
+						window.location.href = "Sigiriya.html";
+					}
+					
+					else if (search == "Sinharaja Forest" || search == "sinharaja forest" || search == "SINHARAJA FOREST" || search == "sinharaja" || search == "Sinharaja" || search == "SINHARAJA") 
+					{
+						window.location.href = "Sinharaja.html";
+					}
+				
+					else if (search == "")
+					{
+						alert("The Search bar is empty! Please type what you are looking for and try again!");
+					}
+				 
+					else 
+					{
+						alert("Sorry, no matches found!")
+					}
+				}
+		</script>		
+		
+		
+	
+	</head>
+			
+	<body>
+		
+	<div class = "container">
+		
+		
+	<!------------------------------------------------Start of the Navigation Pane------------------------------------------------------------------>
+		
+		<div class = "navigation1">
+			<nav>
+				<ul>
+					<li><a href="Home.html" id = "nava1">Home</a></li> 
+					<li><a href="BuyAndSell.html" id = "nava1">Products</a></li>
+					<li><a href="Locations.html" id = "nava1">Locations</a></li> 
+					<li><a href="Sitemap.html" id = "nava1">Site Map</a></li> 
+					<li><a href="Quiz.html" id = "nava1">Quiz</a></li>
+					<li><a href="Pulldown_Menu.html" id = "nava1">Images</a></li>
+					<li><a href="AboutUs.html" id = "nava1">About Us</a></li>
+					<li><a href="ContactUs.html" id = "nava1">Contact Us</a></li> 
+					<li><a href="RateUs.html" id = "nava1">Rate Us</a></li> 
+					
+				</ul>
+			</nav>	
+		</div>
+
+			<!----Logo---->
+			
+		<div class = "logo">
+				<img src = "images/logo.png" width = "200px" height = "50px">
+		</div>
+		
+		
+		<!-- Search Bar -->
+		
+		
+		<div class = "searchbar">
+			<input type = "text"  Placeholder = "Search" id = "search">
+			<button type = "button" onclick = "search();" id = "submit"> Search </button>
+		</div>
+			
+			
+		<!------------------------------------------------End of the Navigation Pane------------------------------------------------------------------>	
+			
+			
+			
+			<!---Heading--->
+	
+		<h1><strong> Locations </strong></h1>
+		
+			
+			<!----Flag---->
+		
+		<div class = "flag">	
+				<a href = "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" target = "_blank"> <img src = "images/flag.gif" width="400px" height="140px"> </a>
+		</div>
+		
+		
+		
+		
+		<!-----------------------------------------Start of the Locations in the body------------------------------------------------------------------------------------>
+		
+		<div class = "container2">
+		
+			<!-- Ella -->	
+		
+			<p id = "topic1"> Ella </p>
+			
+				<div class = "location1">
+					<a href = "EllaSriLanka.html" target = "_blank" > <img src = "images/ellagif.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Anuradhapura-->	
+		
+			<p id = "topic2"> Anuradhapura </p>
+			
+				<div class = "location2">
+					<a href = "Anuradhapura.html" target = "_blank" > <img src = "images/anuradhapura.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Jaffna-->	
+		
+			<p id = "topic3"> Jaffna </p>
+			
+				<div class = "location3">
+					<a href = "Jaffna.html" target = "_blank" > <img src = "images/jaffnagif.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Hambantota-->	
+		
+			<p id = "topic4"> Hambantota </p>
+		
+				<div class = "location4">
+					<a href = "Hambantota.html" target = "_blank" > <img src = "images/hambantotagif.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Kandy-->	
+			
+			<p id = "topic5"> Trincomalee </p>
+		
+				<div class = "location5">
+					<a href = "Trincomalee.html" target = "_blank" > <img src = "images/trincomalee.gif" width="700px" height="600px"> </a>
+				</div>	
+		
+
+			<!-- Nuwara Eliya-->	
+		
+			<p id = "topic6"> Nuwara Eliya </p>
+		
+				<div class = "location6">
+					<a href = "NuwaraEliya.html" target = "_blank" > <img src = "images/nuwaraeliya.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Galle-->	
+		
+			<p id = "topic7"> The Temple of the Tooth Relic </p>
+		
+				<div class = "location7">
+					<a href = "TempleOfTooth.html" target = "_blank" > <img src = "images/temple.gif" width="700px" height="600px"> </a>
+				</div>
+
+	
+			<!-- Polonnaruwa-->	
+		
+			<p id = "topic8"> Sigiriya </p>
+		
+				<div class = "location8">
+					<a href = "Sigiriya.html" target = "_blank" > <img src = "images/sigiriya.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+			<!-- Hikkaduwa-->	
+		
+			<p id = "topic9"> Sinharaja Forest </p>
+		
+				<div class = "location9">
+					<a href = "Sinharaja.html" target = "_blank" > <img src = "images/sinharajaimage2.gif" width="700px" height="600px"> </a>
+				</div>
+		
+		
+		
+			<!-- Sigiriya-->	
+		
+			<p id = "topic10"> Polonnaruwa </p>
+		
+				<div class = "location10">
+					<a href = "Polonnaruwa.html" target = "_blank" > <img src = "images/Polonnaruwaimage.gif" width="700px" height="600px"> </a>
+				</div>	
+		</div>
+		
+		<!-----------------------------------------End of the Locations in the body------------------------------------------------------------------------------------>
+			
+				
+	</body>
+	
+	
+		<!-------------------------------------------------------Start of the Footer------------------------------------------------------------>
+	
+		<div class = "footer"> 
+			<div class = "connectuscolumn">
+				<div id = "connectustext"> Connect with us  </div>
+				
+				<a href = "https://www.facebook.com/" target = "_blank"> <img src = "images/facebook.png" height = "50px" width = "50px" id = "facebook"> </a>
+				<a href = "https://www.linkedin.com/" target = "_blank"> <img src = "images/linkedin.png" height = "50px" width = "50px" id = "linkedin"> </a>
+				<a href = "https://twitter.com/login?lang=en" target = "_blank"> <img src = "images/twitter.png" height = "50px" width = "50px" id = "twitter"> </a>
+				<a href = "https://www.instagram.com/accounts/login/" target = "_blank"><img src = "images/instagram.jpg" height = "50px" width = "50px" id = "instagram"> </a>
+			</div>	
+				
+				
+			<div class = "contactuscolumn">	
+				<div id = "contactustext"> Contact us </div> 	
+				<div id = "mobile"> +94770428327, <a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank" id = "email"> TravelSriLanka@gmail.com </a> </div>						
+			
+				<a href = "https://www.whatsapp.com/" target = "_blank"> <img src = "images/whatsapp.png" height = "53px" width = "53px" id = "whatsapp"> </a>
+				<a href = "https://www.viber.com/" target = "_blank"> <img src = "images/viber.png" height = "50px" width = "50px" id = "viber"> </a>
+				<a href = "https://imo.im/" target = "_blank"> <img src = "images/imo.png" height = "53px" width = "53px" id = "imo"> </a>
+				<a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank"> <img src = "images/gmail.png" height = "63px" width = "53px" id = "gmail"> </a>
+			</div>
+			
+			
+			<div class = "navigation2">
+				<nav id = "nav2">
+					<ul id = "ul2">																				<br>
+						<li id = "li2"><a href="Home.html" id = "nava2"><u>Home</u></a></li> 
+						<li id = "li2"><a href="BuyAndSell.html"id = "nava2"><u>Products</u></a></li>
+						<li id = "li2"><a href="Locations.html"id = "nava2"><u>Locations</u></a></li> 
+						<li id = "li2"><a href="RateUs.html" id = "nava2"><u>Rate Us</u></a></li> 			 <br><br>
+						<li id = "li2"><a href="ContactUs.html" id = "nava2"><u>Contact Us</u></a></li> 
+						<li id = "li2"><a href="AboutUs.html" id = "nava2"><u>About Us</u></a></li> 
+						<li id = "li2"><a href="Sitemap.html" id = "nava2"><u>Site Map</u></a></li> 
+						<li id = "li2"><a href="Quiz.html" id = "nava2"><u>Quiz</u></a></li>							
+					</ul>
+				
+				
+						<!------------Editor's Page------------>
+		
+					<div class = "selection">
+						<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+							<option value = "select">----Page Editors----</option>
+							<option value = "PageEditor_Shalitha.html">Shalitha Praveen </option>
+							<option value = "PageEditor_Thisun.html"> M.R.T.T.Bandara </option>
+							<option value = "PageEditor_Mahesha.html"> Mahesha Piyumantha </option>
+							<option value = "PageEditor_Avishka.html"> Avishka Jayawardhana</option>
+						</select>
+					</div>		
+				</nav>
+			</div>
+		</div>
+		
+		<!-------------------------------------------------------End of the Footer------------------------------------------------------------>
+		
+	</div>
+</html>			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

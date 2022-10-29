@@ -1,0 +1,192 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+
+											/*-------Heading-----*/
+
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 20px;
+	color:  #E3F4F1;
+}
+
+.container {
+	width: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+/*------------------------------------------------------End of the Body --------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------Start of the Form -------------------------------------------------------------------*/
+
+.form {
+	display: grid;
+	position: absolute;
+	top: 210px;
+	padding: 35px;
+	width: 1015px;
+	height: 610px;
+	background-image: url(images/background2.jpg);
+	
+}
+
+.name {
+	font-size: 30px;
+	font-family: Lucida Bright;
+    position: absolute;
+	color: #E3F4F1 ;
+	
+	
+}
+
+.email {
+	font-size: 30px;
+	font-family: Lucida Bright;
+    position: absolute;
+	color: #E3F4F1 ;
+	
+}
+
+.comments {
+	font-size: 30px;
+	font-family: Lucida Bright;
+    position: absolute;
+	color: #E3F4F1 ;
+
+}
+
+.alignname input {
+	font-size: 20px;
+	color: white;
+    position: absolute;
+    left: 504px;
+	top: 35px;
+	background-color: #0B352D;
+	border-color: #0B352D;
+	width: 394px;
+	height: 40px;
+	padding: 20px;
+	background-image:  url(images/blackb.jpg);
+}
+
+.alignemail input {
+	font-size: 20px;
+	font-family: Lucida Bright;
+	color: white;
+    position: absolute;
+    left: 500px;
+	top: 125px;
+	background-color: #0B352D;
+	border-color: #0B352D;
+	width: 395px;
+	height: 40px;
+	padding: 20px;
+	background-image:  url(images/blackb.jpg);
+}
+
+.aligncomments input {
+	font-size: 20px;
+	color: white;
+    position: absolute;
+    left: 500px;
+	top: 215px;
+	background-color: #0B352D;
+	border-color: #0B352D;
+	width: 400px;
+	height: 120px;
+	padding: 20px;
+	background-image:  url(images/blackb.jpg);
+}
+
+
+.rate {
+	font-size: 30px;
+	font-family: Lucida Bright;
+    position: absolute;
+	top: 400px;
+	color: #E3F4F1 ;
+}
+
+.bad {
+	font-size: 25px;
+	font-family: Lucida Bright;
+    position: absolute;
+    top: 450px;
+	left: 500px;
+	color: #E3F4F1 ;	
+}
+
+.good {
+	font-size: 25px;
+	font-family: Lucida Bright;
+    position: absolute;
+    top: 450px;
+	left: 600px;
+	color: #E3F4F1 ;
+}
+
+.excellent {
+	font-size: 25px;
+	font-family: Lucida Bright;
+    position: absolute;
+    top: 450px;
+	left: 720px;
+	color: #E3F4F1 ;
+}
+
+.submit {
+	font-size: 25px;
+	color: white;
+	left: 50%;
+    top: 50%;
+    position: absolute;
+	top: 580px;
+	left: 445px;	
+}
+
+input[type=submit] {
+    font-family: Lucida Bright;
+	font-size: 25px;
+	color: white;
+	width: 200px;  
+	height: 40px;
+	background-color: #0B352D;
+	border-color: #0B352D;
+	background-image:  url(images/background.jpg);
+}
+
+/*--------------------------------------------------------End of the Form -------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------Images-------------------------------------------------------------------*/
+
+
+.rateus2 {
+	position: absolute;
+	top: 900px;
+}	
+	
+.rateus1 {
+	position: absolute;
+	top: 900px;
+	margin-left: 760px;
+}	
+
+.seawaves {
+	position: absolute;
+	top: 210px;
+	margin-left: 1095px; 
+}	
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,317 @@
+/*-------------------------------------------------Start of the Body ---------------------------------------------------------------*/
+
+											/*-------Heading-----*/
+
+h1 {
+	font-size: 100px;
+	font-family: Brush Script MT;
+	position: absolute;
+	left: 20px;
+	margin-top: 20px;
+	color:  #E3F4F1   ;
+}
+
+.container {
+	width: auto;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*------------------------------------------------------End of the Body --------------------------------------------------------------*/
+
+
+
+
+/*-------------------------------------------Images--------------------------------*/
+
+
+
+.upperimage {
+	position: absolute;
+	top: 210px;
+}		
+
+.lowerimage {
+	position: absolute;
+	top: 1480px;
+	
+}	
+
+.hotels {
+	position: absolute;
+	top: 1100px;
+}
+
+
+
+/*-------------------------------------------Start of the Description in the body--------------------------------*/
+
+
+#para1{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 265px;
+	width: 1480px;
+	position: absolute;
+	top: 790px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);	
+}
+
+#para2{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 705px;
+	width: 730px;
+	position: absolute;
+	top: 1082px;
+	margin-left: 750px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;	
+	background-image: url(images/background2.jpg);
+}
+
+#para3{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 515px;
+	width: 715px;
+	position: absolute;
+	top: 1815px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+#para4{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 450px;
+	width: 730px;
+	position: absolute;
+	top: 2360px;
+	margin-left: 750px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*-------------------------------------------End of the Description in the body--------------------------------*/
+
+
+
+/*-------------------------------------------Start of the Hotels in the body--------------------------------*/
+
+
+#hotels{
+	box-sizing: content-box;
+	padding: 10px; 
+	height: 800px;
+	width: 1480px;
+	position: absolute;
+	top: 2860px;
+	color:  #E3F4F1;
+	font-size: 31px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+.location1 {
+	border-radius: 60px; 
+	position: absolute;
+	top: 180px;	
+	margin-left: 35px;
+}
+
+#topic1 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 90px;
+	top: 100px;
+}
+
+.location2 {
+	border-radius: 60px; 
+	position:absolute;
+	top:180px;
+	margin-left: 390px;	
+}
+
+#topic2 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 425px;
+	top: 100px;
+}
+
+.location3 {
+	border-radius: 60px; 
+	position:absolute;
+	top: 180px;
+	margin-left: 745px;	
+}
+
+#topic3 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 800px;
+	top: 100px;
+}
+
+.location4 {
+	border-radius: 60px; 
+	position:absolute;
+	top: 180px;
+	margin-left: 1100px;	
+}
+
+#topic4 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 1145px;
+	top: 100px;
+
+}
+
+.location5{
+	border-radius: 60px; 
+	position: absolute;
+	top: 550px;	
+	margin-left: 35px;
+}
+
+#topic5 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 80px;
+	top: 470px;
+}
+
+.location6{
+	border-radius: 60px; 
+	position:absolute;
+	top:550px;
+	margin-left: 390px;	
+}
+
+#topic6 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 430px;
+	top: 470px;
+}
+
+.location7 {
+	border-radius: 60px; 
+	position:absolute;
+	top: 550px;
+	margin-left: 745px;	
+}
+
+#topic7 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 765px;
+	top: 470px;
+
+}
+
+.location8 {
+	border-radius: 60px; 
+	position:absolute;
+	top: 550px;
+	margin-left: 1100px;	
+}
+
+#topic8 {
+	color: white;
+	font-family: Brush Script MT;	
+	font-size: 35px;
+	position: absolute;
+	margin-left: 1160px;
+	top: 470px;
+
+}
+
+span {
+	font-size: 45px;
+	font-family: Brush Script MT;
+
+}
+
+/*-------------------------------------------End of the Hotels in the body--------------------------------*/
+				
+
+
+			/*-----------------------------Emebedded Videos-------------------------------------------------- */
+			
+			
+#Teavideo {
+	position: absolute;
+	top: 1835px;
+	margin-left: 750px;
+}
+
+#waterfallvideo {
+	position: absolute;
+	top: 2380px;
+}
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

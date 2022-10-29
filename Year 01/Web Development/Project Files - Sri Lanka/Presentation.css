@@ -1,0 +1,121 @@
+/*-------Heading-----*/
+
+h1{
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+	position: absolute;
+	margin-left: 545px;
+	top: -30px;
+    color: 000000;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    font-size: 75px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 27px 17px 16px #655B7D;
+}
+
+
+body{
+    background-image: url(images/dbackground.jpg);
+    background-size: cover;
+   
+}			
+						/*-------Images-----*/
+.column1 {
+   position: absolute;
+   top: 400px;
+   margin-left: 30px;
+   }
+   
+.column2 {
+   position: absolute;
+   top: 400px;
+   margin-left: 415px;
+   }
+
+.column3 {
+   position: absolute;
+   top: 400px;
+   margin-left: 785px;
+   }
+
+.column4 {
+   position: absolute;
+   top: 400px;
+   margin-left: 1170px;
+   }   
+								/*-------Names-----*/
+.name{
+    position: Absolute;
+    top: 320px;
+    margin-left: 65px;
+    font-weight: 700;
+    font-family: 'Inder', sans-serif; 
+    font-style: italic;
+	color: black;
+}
+
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+	position: absolute;
+	margin-left: 75px;
+	top: 300px;
+    letter-spacing: 2px;
+    word-spacing: 0.6px;
+    color: 000000;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 27px 17px 16px #655B7D;
+}
+
+
+p { color: #f8f8f8; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    margin: 0 0 24px;
+    text-align: center; 
+}
+
+
+a { 
+    color: #c8c8c8; 
+    text-decoration: underline; 
+}
+
+
+a:hover { 
+    color: #1c1c1c; 
+    text-decoration: underline; 
+}
+
+.caption{
+    color: #f8f8f8; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 500; 
+    line-height: 32px; 
+    margin: 0 0 24px;
+    text-align: center;
+}
+table, th, td {
+    padding: 10px;
+    border: 5px solid black; 
+    border-collapse: collapse;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+	
+#table {
+	position: absolute;
+	margin-left: 548px;
+	top: 150px;
+}	
+    

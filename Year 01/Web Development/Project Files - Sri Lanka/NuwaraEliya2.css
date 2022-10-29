@@ -1,0 +1,230 @@
+body {
+	background-image: url(images/blackb.jpg);
+	background-repeat: repeat;
+} 
+
+
+/*-------------------------------------------Start of the Navigation Pane--------------------------------*/
+
+nav  {
+	background: #0B352D  ; 
+	width: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 20px
+}
+
+nav a {
+	display: inline-block;
+	padding: 12px; 
+	text-decoration: none;
+	color: #FFFFFF
+}
+
+#nava1:hover {
+	background-image: url(images/background2.jpg);
+	background-size: cover;	
+}
+
+.navigation1 {
+	width: 1500px;
+}
+
+
+/*-------------------------------------------End of the Navigation Pane--------------------------------*/
+
+
+								/* Images */
+.flag {
+	position: absolute;
+	top: 60px;
+	margin-left: 1100px;
+}	
+
+.logo {
+	position: absolute;
+	top: 5px;
+	margin-left: 1300px;
+}
+
+
+
+
+/*-----------------------------------------------------Start of the footer ----------------------------------------------------------*/
+
+
+.footer {
+	box-sizing: content-box;
+	width: 1500px;
+	height: 220px;
+	background-color:  #0B352D ;
+	border-radius: 60px;
+	position: absolute;
+	top: 3570px;
+}
+
+#facebook {
+	position: absolute;
+	top: 120px;
+	margin-left: 600px;
+	border-radius: 5px;
+}
+
+#linkedin {
+	position: absolute;
+	top: 120px;
+	margin-left: 700px;
+	border-radius: 5px;
+}
+
+#twitter {
+	position: absolute;
+	top: 120px;
+	margin-left: 800px;
+	border-radius: 5px;
+}
+
+#instagram {
+	position: absolute;
+	top: 120px;
+	margin-left:900px;
+	border-radius: 5px;
+}
+
+#connectustext {
+	position: absolute;
+	top: 60px;
+	margin-left: 700px;
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 30px;
+}
+
+												/* Contact us section */
+	
+#whatsapp {
+	position: absolute;
+	top: 100px;
+	margin-left: 1120px;
+	border-radius: 5px;
+}	
+	
+#viber {
+	position: absolute;
+	top: 100px;
+	margin-left: 1220px;	
+	border-radius: 5px;
+}
+
+#imo {
+	position: absolute;
+	top: 100px;
+	margin-left: 1320px;	
+	border-radius: 5px;
+}
+
+#gmail {
+	position: absolute;
+	top: 93px;
+	margin-left: 1420px;	
+	border-radius: 5px;
+}
+
+#contactustext {
+	position: absolute;
+	top: 40px;
+	margin-left: 1240px;
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 30px;
+}
+
+#mobile {
+	position: absolute;
+	top: 180px;
+	margin-left: 1110px;
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 20px;	
+}
+
+#email {
+	position: absolute;
+	margin-left: 3px;
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 20px;	
+}
+
+												/* Menu Navigation */
+												
+#nav2  {
+	background: #0B352D  ; 
+	width: 100%;
+	font-family: Brush Script MT;
+}
+
+#ul2 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#li2 {
+	display: inline-block;
+	font-size: 30px;
+}
+
+#nava2:hover {
+	color: #E4FCB3;
+}
+
+#nava2 {
+	display: inline-block;
+	padding: 12px; 
+	color: #FFFFFF
+}		
+
+
+											/* Editor's Page */
+
+.selection {
+	box-sizing: content-box;
+	border: 5px groove green;
+	width: 189px;
+	height: 26px;
+	border-radius: 10px;
+	position: absolute;
+	top: 180px;
+	margin-left: 215px;	
+}
+
+select {
+	font-family: Brush Script MT;
+	font-size: 20px;
+	width: 190px;
+	height: 26px;
+	background-color: #0B352D;
+	color: white;
+	top: 13px;
+}
+
+
+	/*-----------------------------------------------------End of the footer ----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <link rel="stylesheet" href="BuyAndSellCSS.css">
+		<link rel="stylesheet" href="BuyAndSellCSS2.css">
+		
+		<script>
+          var tot;
+          var tot1;
+          var tot2;
+          var tot3;					
+          var amt1;
+          var amt2;
+          var amt3;
+    
+    function increaseValue(parameter) {
+      var val = parseInt(document.getElementById(parameter).value, 10);
+      val = isNaN(val) ? 0 : val;
+      val++;
+      document.getElementById(parameter).value = val;
+    }
+
+    function decreaseValue(param) {
+      var value = parseInt(document.getElementById(param).value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById(param).value = value;
+    }
+
+	function amount(){
+	  tot = 0;
+	  amt1 = document.getElementById('number1').value;
+	  tot1 = amt1 * 14;
+
+	  amt2 = document.getElementById('number2').value;
+	  tot2 = amt2 * 26;
+
+	  amt3 = document.getElementById('number3').value;
+	  tot3 = amt3 * 12;
+
+	  tot = tot1 + tot2 + tot3;
+	  document.getElementById('demo').innerHTML = tot;
+	}
+	
+	function validate() {
+		
+	var name = document.forms["myForm"]["name"].value;
+		
+      if( document.myForm.field1.value == "" ) {
+        var msg = "Please provide your name!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field2.value == "" ) {
+        var msg = "Please provide your Email!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field3.value == "" ) {
+        var msg = "Please provide your Mobile Number!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field4.value == "" ) {
+        var msg = "Please provide your Delivery Address!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field6.value == "" ) {
+        var msg = "Please provide your City!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field7.value == "" ) {
+        var msg = "Please provide your Province!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+      if( document.myForm.field8.value == "" ) {
+        var msg = "Please provide your Zip Code!";
+		document.getElementById('content').innerHTML = msg;
+		return false;
+      }
+	  
+	  else {
+		var msg = "Dear " + name + " ,you have ordered " + amt1 + " mask(s) at a cost of $" + tot1 + " and " + amt2 + " handicraft(s) at a cost of $" 
+					+ tot2 + " and " + amt3 + " pottery at a cost of $" + tot3 + ". Your total bill is $" + tot;
+		document.getElementById('content').innerHTML = msg;
+		
+	  }
+      
+   }
+   
+   var fontSize = 1;
+        function zoomIn() {
+            fontSize += 0.1;
+            document.body.style.fontSize = fontSize + "em";
+        }
+        function zoomOut() {
+            fontSize -= 0.1;
+            document.body.style.fontSize = fontSize + "em";
+        }
+   
+
+
+        </script>
+    </head>
+	
+	
+    <body>
+		<div class = "container">
+		
+		<!------------------------------------------------Start of the Navigation Pane------------------------------------------------------------------>
+	
+			<div class = "navigation1">	
+				<nav>
+					<ul>
+						<li><a href="Home.html" id = "nava1">Home</a></li> 
+						<li><a href="BuyAndSell.html" id = "nava1">Products</a></li>
+						<li><a href="Locations.html"id = "nava1">Locations</a></li> 
+						<li><a href="Sitemap.html" id = "nava1">Site Map</a></li> 
+						<li><a href= "Quiz.html" id = "nava1">Quiz</a></li>
+						<li><a href="Pulldown_Menu.html" id = "nava1">Images</a></li> 
+						<li><a href="AboutUs.html" id = "nava1">About Us</a></li> 
+						<li><a href="ContactUs.html" id = "nava1">Contact Us</a></li> 
+						<li><a href="RateUs.html" id = "nava1">Rate Us</a></li> 
+					</ul>
+				</nav>	
+			</div>	
+		
+				
+			<!----Logo---->
+				
+				<div class = "logo">																								
+					<img src = "images/logo.png" width = "200px" height = "50px">
+				</div>
+	
+		<!------------------------------------------------End of the Navigation Pane------------------------------------------------------------------>
+				
+				<!---Heading--->
+		
+				<h1><strong> Products </strong></h1>
+				
+		<!----Images---->
+		
+			<div class = "flag">	
+				<a href = "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka" target = "_blank"> <img src = "images/flag.gif" width="405px" height="140px"> </a>
+			</div>
+		
+			<div class = "image1">	
+				<a href = "https://youtu.be/uWo084FRIQY" target = "_blank" > <img src = "images/products_image1.gif" width="405px" height="360px"> </a>
+			</div>
+			
+			<div class = "image2">	
+				<a href = "https://youtu.be/uWo084FRIQY" target = "_blank" > <img src = "images/products_image2.gif" width="405px" height="340px"> </a>
+			</div>
+			
+			<div class = "image3">	
+				<a href = "https://youtu.be/uWo084FRIQY" target = "_blank" > <img src = "images/products_image3.gif" width="405px" height="370px"> </a>
+			</div>
+			
+			<div class = "image4">	
+				<a href = "https://youtu.be/uWo084FRIQY" target = "_blank" > <img src = "images/products_image4.gif" width="405px" height="370px"> </a>
+			</div>
+			
+			<!----Buttons for Font size increase---->
+			
+			<div class = "fontIncrease">
+				<input type="button" value="+" onClick="zoomIn()"/>
+				<input type="button" value="-" onClick="zoomOut()"/>
+			</div>
+	
+	
+		<!-----------Form---------------->
+            
+                <div class="formStyle">
+                    <form name = "myForm" onsubmit = "return(validate());">
+                    <fieldset>
+                        <legend><span class="number">1</span> Personal details </legend>
+                            <input type="text" name="field1" id="name" placeholder="Your Name *">
+                            <input type="email" name="field2" id="email" placeholder="Your Email *">
+                            <input type="text" name="field3" id="number" placeholder="Mobile number *">
+                    </fieldset> 
+                    <fieldset>
+                        <legend><span class="number">2</span> Delivery details</legend>
+                            <input type="text" name="field4" id="address1" placeholder="Delivery Address line 1">
+                            <input type="text" name="field5" id="address2" placeholder="Delivery Address line 2">
+                            <input type="text" name="field6" id="city" placeholder="City">
+                            <input type="text" name="field7" id="province" placeholder="State/Province">
+                            <input type="text" name="field8" id="zip" placeholder="Postal/Zip code">
+                    </fieldset>   
+                    <fieldset>
+                      <legend><span class="number">3</span> Order Details</legend>
+                      <div class="order">
+					  
+                        <!-- Product #1 -->
+						
+                        <div class="item">
+                           <div class="image">
+                            <img src="images/masks.jpeg" alt="" height="150px" width="200px">
+                           </div>
+                       
+                          <div class="description">
+                            <span> Ambalangoda </span>
+                            <span> Used in a form of dancing</span>
+                            <span> Raksha Mask </span>
+                          </div>
+						  
+						  <div class="value-button" id="decrease" onclick="decreaseValue('number1')" value="Decrease Value">-</div>
+ 							 <input type="number" id="number1" value="0" />
+  							<div class="value-button" id="increase" onclick="increaseValue('number1')" value="Increase Value">+</div>
+                       
+                          <div class="total-price">$14</div>
+                        </div>
+                       
+                        <!------ Product #2------>
+						
+                        <div class="item">
+                          
+                          <div class="image">
+                            <img src="images/ele.jpg" alt="" height="150px" width="200px" />
+                          </div>
+                       
+                          <div class="description">
+                            <span>Hand Made</span>
+                            <span>Natural wood, Origin Sri Lanka, Ceylon handicraft</span>
+                            <span>Black Sri Lankan wooden Elephant</span>
+                          </div>
+						  
+						  <div class="value-button" id="decrease" onclick="decreaseValue('number2')" value="Decrease Value">-</div>
+ 							 <input type="number" id="number2" value="0" />
+  							<div class="value-button" id="increase" onclick="increaseValue('number2')" value="Increase Value">+</div>
+                       
+                       
+                          <div class="total-price">$26</div>
+                        </div>
+                       
+                        <!-- Product #3 -->
+						
+                        <div class="item">
+                       
+                          <div class="image">
+                            <img src="images/clay.png" alt="" height="150px" width="200px" />
+                          </div>
+                       
+                          <div class="description">
+                            <span> Vintage from the 1930s</span>
+                            <span>Srilankan handmade folk large pot</span>
+                            <span> Pottery</span>
+						  </div>
+					
+						  
+						  	<div class="value-button" id="decrease" onclick="decreaseValue('number3')" value="Decrease Value">-</div>
+ 							 <input type="number" id="number3" value="0" />
+  							<div class="value-button" id="increase" onclick="increaseValue('number3')" value="Increase Value">+</div>
+                       
+                          <div class="total-price">$12</div>
+                        </div>
+                      </div>
+                    <button class="button" onclick="amount(); return false;"><span>View total bill</span></button>
+                      
+                    <div class="total">
+                      Your total bill is: <div id="demo"></div>
+                    </div>
+                      
+                    
+                    </fieldset>	<br>
+                    
+                    <a class="button" href="#popup1" id = "PlaceOrder"onclick="amount(); validate();">Place Order</a>
+                    <div id="popup1" class="overlay">
+                      <div class="popup">
+                        <h2>Bill Summary</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p id="content"> </p>
+                        <button type="button" id="btn"><a href="#">OK</a></button>
+                      </div>
+                    </div>
+                    </form>
+                </div>
+    </body>
+	
+	
+	<!------------------------------------------------Start of the Footer--------------------------------------------->
+	
+		<div class = "footer"> 
+			<div class = "connectuscolumn">
+				<div id = "connectustext"> Connect with us  </div>
+				
+					<a href = "https://www.facebook.com/" target = "_blank"> <img src = "images/facebook.png" height = "50px" width = "50px" id = "facebook">	</a>
+					<a href = "https://www.linkedin.com/" target = "_blank"> <img src = "images/linkedin.png" height = "50px" width = "50px" id = "linkedin">	</a>
+					<a href = "https://twitter.com/login?lang=en" target = "_blank"><img src = "images/twitter.png" height = "50px" width = "50px" id = "twitter">	</a>
+					<a href = "https://www.instagram.com/accounts/login/" target = "_blank"><img src = "images/instagram.jpg" height = "50px" width = "50px" id = "instagram">  </a>
+			</div>	
+				
+			<div class = "contactuscolumn">	
+				<div id = "contactustext"> Contact us </div> 	
+				<div id = "mobile"> +94770428327 , <a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank" id = "email2"> TravelSriLanka@gmail.com </a></div>						
+					
+					<a href = "https://www.whatsapp.com/" target = "_blank"> <img src = "images/whatsapp.png" height = "53px" width = "53px" id = "whatsapp">	</a>
+					<a href = "https://www.viber.com/" target = "_blank"> <img src = "images/viber.png" height = "50px" width = "50px" id = "viber">	</a>
+					<a href = "https://imo.im/" target = "_blank"> <img src = "images/imo.png" height = "53px" width = "53px" id = "imo">	</a>
+					<a href = "https://www.google.com/intl/en-GB/gmail/about/" target = "_blank"> <img src = "images/gmail.png" height = "63px" width = "53px" id = "gmail">  </a>	
+			</div>
+			
+			
+			<div class = "navigation2">
+				<nav id = "nav2">
+						<ul id = "ul2">													<br>
+							<li id = "li2"><a href="Home.html" id = "nava2"><u>Home</u></a></li> 
+							<li id = "li2"><a href="BuyAndSell.html"id = "nava2"><u>Products</u></a></li>
+							<li id = "li2"><a href="locations.html" id = "nava2"><u>Locations</u></a></li> 
+							<li id = "li2"><a href="RateUs.html" id = "nava2"><u>Rate Us</u></a></li> 			 <br><br>
+							<li id = "li2"><a href="ContactUs.html" id = "nava2"><u>Contact Us</u></a></li> 
+							<li id = "li2"><a href="AboutUs.html" id = "nava2"><u>About Us</u></a></li> 
+							<li id = "li2"><a href="Sitemap.html" id = "nava2"><u>Site Map</u></a></li> 
+							<li id = "li2"><a href="Quiz.html" id = "nava2"><u>Quiz</u></a></li> 						 <br>
+							<li id = "li2"><a href="PageEditor_Shalitha.html" id = "nava2"><u>Page Developer</u></a></li> 	
+						</ul>
+						
+						
+							<!--Editor's Page-->
+				
+					<div class = "selection">
+							<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+								<option value = "select">----Page Editors----</option>
+								<option value = "PageEditor_Shalitha.html">Shalitha Praveen </option>
+								<option value = "PageEditor_Thisun.html"> M.R.T.T.Bandara </option>
+								<option value = "PageEditor_Mahesha.html"> Mahesha Piyumantha </option>
+								<option value = "PageEditor_Avishka.html"> Avishka Jayawardhana </option>
+							</select>
+					</div>	
+				</nav>
+			</div>
+		</div>
+		
+		<!------------------------------------------------End of the Footer--------------------------------------------->
+		
+	</div>
+</html>

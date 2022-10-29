@@ -1,0 +1,72 @@
+							/*------Heading-------*/
+#topic {
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 100px;
+}
+
+.container {
+	position:absolute;
+	top: 200px;
+	margin-left: 380px;
+}
+
+
+							/*------Main content------*/
+.proPics{
+	border: 5px groove green;
+	width: 690px;
+	height: 820px;
+	background-image:url(dbackground.jpg);
+	background-size: 690px 800px;
+	border-radius: 10px;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  	font-family: sans-serif;
+  	color: black;
+}
+
+
+.imageContent{
+	display:block;
+	float: left;
+    padding-top: 5px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:50px;
+    border-radius: 50%;
+}
+
+.imageContent div{
+ 	background: black;
+ 	color: white;
+ 	margin-bottom: 5px;
+ 	font-family: sans-serif;
+ 	opacity: 0;
+ 	position: absolute;
+ 	visibility: hidden;
+ 	-webkit-transition: visibility 0s, opacity 0.5s linear; 
+ 	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.imageContent:hover{
+ 	cursor: pointer;
+}
+
+
+.imageContent:hover div{
+ 	width: 270px;
+ 	padding: 8px 15px;
+ 	visibility: visible;
+ 	opacity: 2.0; 
+}
+
+
+
+	
+
+
+	
+	

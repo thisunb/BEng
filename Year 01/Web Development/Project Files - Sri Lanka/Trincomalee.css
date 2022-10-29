@@ -1,0 +1,72 @@
+.container {
+	width: 1500px;
+}
+
+.topic {
+	color: white;
+	font-size: 100px;
+	font-family: Brush Script MT;
+    position: absolute;
+    top: 70px;
+	margin-left: 5px;
+}
+
+
+/*----------------------Images---------------*/
+
+.image1 {
+	position: absolute;
+	top: 210px;
+}		
+
+.image2 {
+	position: absolute;
+	top: 1465px;
+}	
+
+.hotels {
+	position: absolute;
+	top: 1085px;
+}
+
+
+	/*------Video------------- */
+
+#video {
+	position: absolute;
+	top: 1317px;
+	margin-left: 750px;
+}
+
+
+		/*------------------------------Descriptions------------------------------------ */
+
+#para1{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 250px;
+	width: 1480px;
+	position: absolute;
+	top: 780px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+
+#para2{
+	box-sizing: content-box;
+	padding: 10px;
+	height: 690px;
+	width: 730px;
+	position: absolute;
+	top: 1060px;
+	margin-left: 750px;
+	color:  #E3F4F1;
+	font-size: 20px;
+	font-family: Verdana;
+	background-image: url(images/background2.jpg);
+}
+
+
