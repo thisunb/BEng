@@ -1,0 +1,22 @@
+<h1 class = "heading"> All Played Matches</h1>
+
+<a routerLink = ""> <button class = "backToHome"> Back to Home </button> </a>
+
+<table class = "center">                                                    <!-- Creating a table to display matches --> 
+
+    <tr>                                                                               <!-- Adding headers for table --> 
+        <th class = "location"> Date</th>
+        <th class = "location"> Club 1 </th>
+        <th class = "location"> Club 2 </th>
+        <th class = "location"> Score for Club 1 </th>
+        <th class = "location"> Score for Club 2 </th>
+    </tr>
+    
+    <tr *ngFor = "let data of matchList">                                                <!-- Adding rows with data  --> 
+        <td class = "textData">{{data.date}}</td>
+        <td class = "textData">{{data.club1}}</td>
+        <td class = "textData">{{data.club2}}</td>
+        <td class = "textData">{{data.goalsScored1}}</td>
+        <td class = "textData">{{data.goalsScored2}}</td>
+    </tr> 
+</table>

@@ -1,0 +1,106 @@
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.heading {
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: rgb(37, 28, 61);
+    border-radius: 10px;
+    padding: 2px;
+    opacity: 0.8;
+}
+
+
+.backToHome{
+    position: absolute;
+    margin-top: -63px;
+    margin-left: 1385px;
+    background-color: rgb(0, 71, 4);
+    border: solid rgb(0, 71, 4);
+    border-radius: 3px;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.backToHome:hover {
+    transition: 0.5s;
+    background-color: rgba(6, 226, 17, 0.37);
+    border: solid rgba(6, 226, 17, 0.37);
+}
+
+
+table, th, td {
+    border: 1px groove; 
+    border-color: black; 
+    font-family:'Verdana' ;
+}
+
+
+table {
+    border-radius: 2px; 
+    border-color:  #080c16;
+    background-color:#080c16;
+    opacity: 0.9;
+}
+
+
+td {
+    padding: 20px;
+    background-color: #080c16;
+    color:rgb(214, 214, 214);
+    font-weight: 900;
+}
+
+
+th {
+    width: 100px;
+    padding: 5px;
+    background-color: #1B0728;
+    color: white;
+}
+
+
+.number {
+    width: 30px;
+}
+
+
+.matchDetails {
+    width: 1200px;
+}
+
+
+.textData{
+    text-align: center;
+}
+
+
+.location {
+    width: 200px;
+}
+
+
+.numbers {
+    width: 50px;
+    text-align: center;
+}
+
+
+.numberData {
+    text-align: center;
+}
+
+
+.numericalData {
+    text-align: center;
+    padding: 10px;
+}

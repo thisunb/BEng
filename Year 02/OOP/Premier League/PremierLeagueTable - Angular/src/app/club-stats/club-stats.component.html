@@ -1,0 +1,52 @@
+<button class = "getdata" (click) = "sortByPoints()"  onclick = "style.display = 'none'" ><span class="text"> Click For Details </span></button>
+
+<h1 class = "heading"> Premier League Table</h1>
+
+<img src="assets/Images/premierLeagueImage2.png" class = "logo">
+                                                                                
+<div class = "optionsPane">                                                                     <!-- Adding Pane for all options -->                           
+
+    <button class = "allMatchesButton" (click) = "allMatches()">  All Matches played </button>
+    <button class = "randomMatchButton" (click) = " randomMatchPlayed()"> Random Match  </button>
+    <button class = "pointsButton" (click) = "sortByPoints()"> Sort by Points  </button> 
+    <button class = "winsButton" (click) = "sortByWins()"> Sort by Wins   </button> 
+    <button  class = "gsButton" (click) = "sortByGs()"> Sort by GS  </button> 
+
+    <p class = "dateText ">Enter Date to find matches (DD.MM.YYYY) </p>
+    <input type="text" class = "searchTextfield" placeholder="Date" #txtDate>
+    <button  class = "getDetailsButton" (click) = "getDetails(txtDate)"> Get Details  </button> 
+
+</div>
+
+<table>                                                                                                    <!-- Creating table  --> 
+                                                                                    
+    <tr>                                                                                              <!-- Adding table headers --> 
+        <th class = "number"> Number</th>
+        <th class = "name"> Club Name</th>
+        <th class = "location"> Location</th>
+        <th class = "numbers" > Matches</th>
+        <th class = "numbers"> Wins</th>
+        <th class = "numbers"> Draws</th>
+        <th class = "numbers"> Defeats</th>
+        <th class = "numbers"> GS</th>
+        <th class = "numbers"> GA</th>
+        <th class = "numbers"> GD</th>
+        <th class = "numbers"> Points</th>
+    </tr>
+    
+    <tr *ngFor = "let data of clubDetails; index as i">                                         <!-- Adding table rows with data --> 
+
+        <td class = "numberData">  {{i+1}} </td>
+        <td class = "textData"> {{data.clubName}}</td>
+        <td class = "textData"> {{data.location}}</td>
+        <td class = "numericalData"> {{data.noOfMatches}}</td>
+        <td class = "numericalData"> {{data.noOfWins}}</td>
+        <td class = "numericalData"> {{data.noOfDraws}}</td>
+        <td class = "numericalData"> {{data.noOfDefeats}}</td>
+        <td class = "numericalData"> {{data.noOfGoalsScored}}</td>
+        <td class = "numericalData"> {{data.noOfGoalsAgainst}}</td>
+        <td class = "numericalData"> {{data.goalDifference}}</td>
+        <td class = "numericalData"> {{data.noOfPoints}}</td>
+
+    </tr> 
+</table>

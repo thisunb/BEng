@@ -1,0 +1,257 @@
+.heading {
+    position: absolute;
+    margin-top: -6px;
+    margin-left: 430px;;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: rgb(37, 28, 61);
+    border-radius: 10px;
+    padding: 2px;
+    opacity: 0.7;
+}
+
+
+.logo{
+    position: absolute;
+    margin-left: 1200px;
+}
+
+
+.optionsPane {
+    box-sizing: content-box;
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    left: 1235px;
+    top: 330px;
+    background-color:#080c16;
+    opacity: 0.95;
+}
+
+
+.getdata  {
+    width: 1149px;
+    height: 900px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 70px;
+    left: 8px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+
+    animation-name: getDataButton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+  
+
+ @keyframes getDataButton {                                                     /* Adding color transition to button */
+    from{background-color: rgba(0, 0, 0, 0.2);}
+    to{ background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8); }
+}
+
+
+.getdata:hover{
+    cursor: pointer;
+    transition: 1s;
+    border: solid  rgb(1, 138, 13);
+}
+
+
+.text {
+    position: absolute;
+    top: 400px;
+    left: 460px;
+}
+
+
+.allMatchesButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 10%;
+    background-color: rgb(0, 15, 48);
+    color: white;
+    cursor: pointer;
+}
+
+
+.randomMatchButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 19%;
+    background-color: rgb(0, 15, 48);
+    color: white;
+    cursor: pointer;
+}
+
+
+.pointsButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 28%;
+    background-color: rgb(0, 15, 48);
+    color: white;
+    cursor: pointer;
+}
+
+
+.winsButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 37%;
+    background-color: rgb(0, 15, 48);
+    color: white;
+    cursor: pointer;
+}
+
+
+.gsButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 46%;
+    background-color: rgb(0, 15, 48);
+    color: white;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transition: 0.3s;
+    background-color: rgb(6, 60, 175);
+    border: solid rgb(6, 60, 175);
+}
+
+
+.dateText {
+   color: rgb(255, 255, 255);
+   position: absolute;
+   top: 55%;
+   font-weight: 500;
+   font-size: 15px;
+   text-align: center;
+}
+
+
+.searchTextfield {
+    width: 200px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 8%;
+    top: 67%;
+    background-color: rgb(18, 11, 46);
+    color: white;
+    text-align: center;
+}
+
+
+.getDetailsButton {
+    width: 150px;
+    padding: 5px;
+    border-color: black;
+    position: absolute;
+    left: 21%;
+    top: 79%;
+    background-color: rgb(70, 14, 14);
+    color: white;
+    cursor: pointer;
+}
+
+.getDetailsButton:hover {
+    transition: 0.3s;
+    background-color: rgb(136, 5, 0);
+    border: solid rgb(136, 5, 0);
+}
+
+
+
+table, th, td {
+    border: 1px groove; 
+    border-color: black; 
+    font-family:'Verdana' ;
+}
+
+
+table {
+    position: absolute;
+    top: 45.5px;
+    border-radius: 2px; 
+    border-color:  #080c16;
+    background-color:#080c16;
+    opacity: 0.9;
+}
+
+
+td {
+    padding: 20px;
+    background-color: #080c16;
+    color:rgb(214, 214, 214);
+    font-weight: 900;
+    border-bottom: solid rgb(78, 4, 4) 0.5px;
+    border-right: solid rgb(0, 14, 2) 0.5px;   
+}
+
+
+th {
+    width: 100px;
+    padding: 3px;
+    background-color: #1B0728;
+    color: white;
+}
+
+
+.number {
+    width: 30px;
+}
+
+
+.name {
+    width: 200px;
+}
+
+
+.textData{
+    text-align: center;
+}
+
+
+.location {
+    width: 200px;
+}
+
+
+.numbers {
+    width: 70px;
+    text-align: center;
+}
+
+
+.numberData {
+    text-align: center;
+}
+
+
+.numericalData {
+    text-align: center;
+    padding: 10px;
+}
