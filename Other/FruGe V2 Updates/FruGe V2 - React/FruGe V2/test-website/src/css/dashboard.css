@@ -1,0 +1,103 @@
+.dashboard-heading-text {
+  width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(226, 255, 219, 0.89);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.dashboard-description {
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(226, 255, 219, 0.308);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.item {
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.loadingText {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: rgb(25, 59, 30);
+  font-style: italic;
+  font-weight: 700;
+  width: 100%;
+  font-size: 30px;
+}
+
+/*-------------------------------------------- small screen size ---------------------------------------------*/
+
+@media only screen and (max-width: 700px) {
+  .dashboard-heading-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(226, 255, 219, 0.89);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .dashboard-description {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(226, 255, 219, 0.308);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .item {
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+
+  .loadingText {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(25, 59, 30);
+    font-style: italic;
+    font-weight: 600;
+    width: 100%;
+    font-size: 18px;
+  }
+}
