@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/2820086/javascript-find-and-scroll-to-text
+
+https://stackoverflow.com/questions/13239367/scroll-to-top-when-div-clicked
+
+https://stackoverflow.com/questions/11715646/scroll-automatically-to-the-bottom-of-the-page
+

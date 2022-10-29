@@ -1,0 +1,226 @@
+.produce-container-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../images/form-background-high-blur.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forecast-executer {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast-item-heading {
+  font-style: italic;
+  background-color: rgba(87, 160, 99, 0.263);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.forecast-item-subheading {
+  color: white;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.available-forecast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 1000px;
+}
+
+.new-forecast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 1000px;
+}
+
+.config-item {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  color: white;
+  border: solid 2px rgb(49, 190, 61);
+  border-radius: 50px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.config-item:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.forecast-button {
+  margin: 20px;
+  background-color: transparent;
+  border: solid 1px rgb(113, 228, 123);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+  width: 300px;
+  outline: none;
+  cursor: pointer;
+}
+
+.forecast-button:hover {
+  background-color: rgb(113, 228, 123);
+  transition: 0.3s;
+  color: black;
+}
+
+.response-heading {
+  color: white;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.response-box {
+  height: 200px;
+  width: 600px;
+  font-style: italic;
+  border: solid 1px rgb(113, 228, 123);
+  border-radius: 5px;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.response-box::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+.response-box::-webkit-scrollbar-thumb {
+  background: rgb(6, 36, 8); 
+  border-radius: 5px;
+}
+
+.no-added-message {
+  color: rgba(255, 255, 255, 0.63);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.file-uploader {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.choose-file-btn {
+  border: solid 1px rgb(113, 228, 123);
+  color: white;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 120px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.choose-file-btn:hover {
+  background-color: rgb(113, 228, 123);
+  transition: 0.3s;
+  color: black;
+}
+
+.upload-button {
+  border: solid 1px rgb(113, 228, 123);
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.upload-button:hover {
+  background-color: rgb(52, 213, 100);
+  transition: 0.3s;
+  color: black;
+}
+
+.refresh-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 15px;
+  border: solid 1px rgb(113, 228, 123);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.refresh-icon-wrapper:hover{
+  background-color: rgba(87, 160, 99, 0.263);
+  transition: 0.3s;
+  color: black;
+}
+
+.refresh-text{
+  color: white;
+  padding-left: 10px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.selected-files-container-wrapper {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.selected-files-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  padding: 10px;
+}

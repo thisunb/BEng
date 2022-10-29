@@ -1,0 +1,94 @@
+.welcome-container {
+  width: 55%;
+  height: 90%;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  border: solid 5px rgb(45, 136, 45);
+  background-color: rgb(207, 255, 213);
+  transition: 0.2s;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url("../images/form-background-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#welcome-container-id {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+#page div:not(#welcome-container-id){
+    z-index:1;
+}
+
+.close-welcome-icon-wrapper {
+  padding: 5px;
+}
+
+#close-welcome-icon {
+  float: right;
+  cursor: pointer;
+}
+
+.welcome-heading-wrapper {
+  text-align: center;
+}
+
+#welcome-heading {
+  color: rgb(11, 136, 11);
+  font-weight: 700;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.welcome-text-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 0px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#welcome-text {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 35px;
+  text-decoration: none;
+
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-signup-link {
+  color: rgb(74, 203, 74);
+}
+
+.welcome-signup-link:hover {
+  color: rgb(30, 131, 30);
+}
+
+.welcome-logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*---Footer logo--- */
+.welcome-logo {
+  border-radius: 50px 5px 50px 5px;
+}

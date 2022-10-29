@@ -1,0 +1,97 @@
+.dashboard-heading-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(226, 255, 219, 0.89);
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.searchArea {
+  float: right;
+}
+
+.searchText {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.search-btn{
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  border: solid 0px rgba(95, 246, 120, 0.582);
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgb(18, 54, 25);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: rgb(33, 97, 46);
+  transition: 0.3s;
+}
+
+.dashboard-sub-heading-text {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(50, 65, 45);
+}
+
+.dashboard-loading-icon{
+  color: rgba(255, 255, 255, 0.635);
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: rgba(4, 5, 4, 0.895);
+}
+
+.no-added-message {
+  color: rgba(255, 255, 255, 0.635);
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  background-color: rgba(4, 5, 4, 0.895);
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dashboard-body-wrapper{
+  background-image: url("../images/form-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dashboard-body {
+  backdrop-filter: blur(2px);
+}
+
+/*-------------------------------------------- small screen size ---------------------------------------------*/
+
+@media only screen and (max-width: 700px) {
+  
+
+ 
+}

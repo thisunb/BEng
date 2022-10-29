@@ -1,0 +1,30 @@
+.chart-container{
+    background-color: rgba(50, 65, 45, 0.916);
+    margin: 10px;
+    border-radius: 100px;
+    border: solid rgb(83, 233, 105) 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 400;
+    font-style: italic;
+    color: green;
+}
+
+.chart-container:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.chart-item-name{
+    color: black;
+    font-style: normal;
+    text-align: center;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: rgba(200, 245, 208, 0.866);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
