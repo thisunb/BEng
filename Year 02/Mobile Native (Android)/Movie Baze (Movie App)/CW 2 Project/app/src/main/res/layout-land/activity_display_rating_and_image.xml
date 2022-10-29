@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".displayRatingAndImage">
+
+    <TextView
+        android:id="@+id/display_rating_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/styled_button_main"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:textSize="16sp"
+        android:text="@string/display_rating_header_text" />
+
+    <ListView
+        android:id="@+id/list_item_display_rating"
+        android:layout_width="280dp"
+        android:layout_height="270dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/display_rating_header"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/styled_image_views"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView_display_rating"
+        android:layout_width="280dp"
+        android:layout_height="270dp"
+        android:padding="5dp"
+        android:layout_below="@+id/display_rating_header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/styled_image_views"
+        android:src="@drawable/movies_logo"
+        android:contentDescription="@string/movie_image_des"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

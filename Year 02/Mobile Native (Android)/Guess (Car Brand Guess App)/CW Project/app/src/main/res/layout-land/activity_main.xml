@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_image"
+        tools:context=".MainActivity">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:text="@string/switch_text"
+            android:background="@drawable/styled_instruction_text"
+            android:padding="10dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/styled_image_views"
+            android:contentDescription="@string/image_description"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:srcCompat="@drawable/b5" />
+
+        <TextView
+            android:id="@+id/textView_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_an_option_below_text"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_identify_car_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styled_button_main"
+            android:onClick="displayImage"
+            android:text="@string/identify_the_car_make_text"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_hints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_identify_car_make"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/styled_button_main"
+            android:onClick="moveToHints"
+            android:text="@string/hints_text"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_identify_car_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_hints"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/styled_button_main"
+            android:onClick="moveToIdentifyCarImage"
+            android:text="@string/identify_the_car_image_text"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_advanced_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_identify_car_image"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/styled_button_main"
+            android:onClick="moveToAdvancedLevel"
+            android:text="@string/advanced_level_text"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+</ScrollView>

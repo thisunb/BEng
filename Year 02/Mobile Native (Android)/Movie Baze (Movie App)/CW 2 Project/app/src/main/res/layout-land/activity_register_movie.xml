@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01_register_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_image"
+        tools:context=".RegisterMovie">
+    
+        <TextView
+            android:id="@+id/register_movie_header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/styled_button_main"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"
+            android:text="@string/add_movie_header_text" />
+    
+        <EditText
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:hint="@string/movie_title_hint"
+            android:autofillHints=""
+            android:textSize="14sp"/>
+    
+        <EditText
+            android:id="@+id/movieYear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/movieTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_movie_year_hint"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp"/>
+    
+        <EditText
+            android:id="@+id/movieDirector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_movie_director_hint"
+            android:layout_below="@+id/movieYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp"/>
+    
+        <EditText
+            android:id="@+id/movieActors"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_actors_actresses_hint"
+            android:layout_below="@+id/movieDirector"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp"/>
+    
+        <EditText
+            android:id="@+id/movieRating"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="@string/enter_rating_hint"
+            android:layout_below="@+id/movieActors"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp"/>
+    
+        <EditText
+            android:id="@+id/movieReview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:hint="@string/type_review_hint"
+            android:layout_below="@+id/movieRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:autofillHints=""
+            android:textSize="14sp"/>
+    
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/styled_button_main"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/movieReview"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:onClick="saveData"
+            android:textColor="#FFFFFF"
+            android:text="@string/save_button_text"
+            android:textAllCaps="false" />
+        
+    </RelativeLayout>
+    
+</ScrollView>

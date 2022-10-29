@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_image_land"
+        android:visibility="visible"
+        tools:context=".HintsActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="328dp"
+            android:layout_height="259dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/styled_image_views"
+            android:contentDescription="@string/image_description" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="182dp"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginRight="81dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:background="@drawable/styled_spinner"
+            android:gravity="center"
+            android:text="@string/display_vehicle_name"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/userAnswer"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/displayName"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:autofillHints=""
+            android:background="@drawable/styled_spinner"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_a_character_text"
+            android:inputType="textPersonName"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/userAnswer"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:text="@string/display_feedback"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:visibility="invisible"
+            tools:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/correctAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="114dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:text="@string/correct_answer"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="90dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/instruction"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:background="@drawable/styled_countdown"
+            android:gravity="center"
+            android:text="@string/countdown_text"
+            android:textColor="#00FF00"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/styled_spinner"
+            android:onClick="submit"
+            android:text="@string/submit_button_text"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="288dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/userAnswer"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/instruction_text4"
+            android:textColor="#96AC6D"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Guess</string>
+
+    <string name="select_an_option_below_text">Select an Option Below</string>
+
+    <string name="identify_the_car_make_text">Identify the Car Make</string>
+    <string name="hints_text">Hints</string>
+    <string name="identify_the_car_image_text">Identify the Car Image</string>
+    <string name="advanced_level_text">Advanced Level</string>
+
+    <string name="identify_button_text">Identify</string>                          // Button Texts
+    <string name="next_button">Next</string>
+    <string name="submit_button_text">Submit</string>
+
+    <string name="audi_cars">AUDI</string>                                      // Car Brand Texts
+    <string name="bmw_cars">BMW</string>
+    <string name="ford_cars">FORD</string>
+    <string name="honda_cars">HONDA</string>
+    <string name="tesla_cars">TESLA</string>
+    <string name="volvo_cars">VOLVO</string>
+
+    <string name="display_vehicle_name">Display Name</string>
+    <string name="display_feedback">Feedback</string>
+    <string name="correct_text">CORRECT!</string>
+    <string name="wrong_text">WRONG!</string>
+    <string name="correct_answer">Correct Answer</string>
+
+    <string name="image_description">Image Description</string>
+    <string name="enter_your_guess_text">Enter your guess</string>
+
+    <string name="car_brand1">car_brand1</string>
+    <string name="car_brand2">car_brand2</string>
+    <string name="car_brand3">car_brand3</string>
+
+    <string name="initial_score_text">Score - 0</string>
+    <string name="time_up_message_text">Time up!</string>
+
+    <string name="countdown_text">countdown</string>
+    <string name="display_brand_text">Display Brand</string>
+    <string name="switch_text">Start Countdown</string>
+    <string name="enter_a_character_text">Enter a Character here</string>
+
+    <string name="instruction_text1">Enter correct Brands match to the images shown</string>
+    <string name="instruction_text2">Select the correct Brand matches to the image shown</string>
+    <string name="instruction_text3">Select the correct Image matches to the Brand displayed</string>
+    <string name="instruction_text4">Enter the correct Brand matches to the image shown</string>
+    <string name="game_over_text">Game Over!</string>
+    <string name="go_back_button_text">Go Back to Main Menu</string>
+
+    <string-array name="brand_list">
+        <item>[SELECT BRAND]</item>
+        <item>AUDI</item>
+        <item>BMW</item>
+        <item>FORD</item>
+        <item>HONDA</item>
+        <item>TESLA</item>
+        <item>VOLVO</item>
+    </string-array>
+
+</resources>

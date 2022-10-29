@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01_edit_movies2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_image"
+        tools:context=".EditMovies2">
+
+        <TextView
+            android:id="@+id/edit_movies2_header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/styled_button_main"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="18sp"
+            android:text="@string/edit_movies2_header" />
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="110dp"
+            android:paddingStart="10dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/movie_title_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            android:autofillHints=""
+            android:background="@drawable/input_text"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:id="@+id/year_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title_label"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:paddingStart="10dp"
+            android:text="@string/movie_year_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:autofillHints=""
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/director_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/year_label"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp"
+            android:text="@string/movie_director_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/director"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:layout_below="@+id/year"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:autofillHints=""
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/actors_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="40dp"
+            android:paddingStart="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/director_label"
+            android:text="@string/movie_actors_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/actors"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:layout_below="@+id/director"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/review_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingStart="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/actors_label"
+            android:text="@string/movie_review_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/review"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:layout_below="@+id/actors"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/favourite_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingStart="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/review_label"
+            android:text="@string/favourite_status_text"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/review"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"
+            android:background="@drawable/input_text"
+            android:popupBackground="@drawable/styled_popup_background"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:foregroundGravity="center"
+            android:scrollbarStyle="insideOverlay"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/selection"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_text"
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/review"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            tools:ignore="RtlSymmetry"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/title_label"
+            android:layout_toRightOf="@+id/title_label"/>
+
+        <TextView
+            android:id="@+id/rating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/spinner"
+            android:textColor="#FFFFFF"
+            android:text="@string/movie_rating_text"
+            android:paddingLeft="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:isIndicator="false"
+            android:numStars="10"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:stepSize="1"/>
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/styled_button_main"
+            android:onClick="update"
+            android:text="@string/update_text"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</ScrollView>

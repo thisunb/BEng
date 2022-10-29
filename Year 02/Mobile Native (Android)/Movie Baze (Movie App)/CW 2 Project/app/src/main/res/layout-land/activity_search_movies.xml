@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_image"
+    tools:context=".SearchMovies">
+
+    <TextView
+        android:id="@+id/search_movie_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/styled_button_main"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:textSize="18sp"
+        android:text="@string/search_movie_header_text" />
+
+    <TextView
+        android:id="@+id/message_search_movies"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:layout_below="@+id/search_movie_header"
+        android:layout_marginTop="15dp"
+        android:text="@string/search_message_text"
+        android:textColor="#E8A5E5"
+        android:background="@drawable/styled_image_views"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1_search_movies"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/search_movie_header"
+        android:layout_marginTop="15dp">
+
+        <ListView
+            android:id="@+id/list_item_search_movies"
+            android:layout_width="250dp"
+            android:layout_height="220dp"
+            android:scrollbars="none"
+            android:background="@drawable/styled_image_views"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enterString"
+        android:background="@drawable/input_text"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:ems="10"
+        android:layout_below="@+id/search_movie_header"
+        android:textSize="14sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_a_keyword_text"
+        android:autofillHints=""
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/button_lookup"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="getData"
+        android:textColor="#FFFFFF"
+        android:text="@string/lookup_button_text"
+        android:background="@drawable/styled_button_main"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
